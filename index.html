@@ -1,10 +1,11 @@
-<!DOCTYPE html >
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Shivkumar Patil - Senior Technical Project Manager & QA-DevOps Leader - Detailed Resume">
-    <title>Shivkumar Patil - Detailed Resume</title>
+    <meta name="description" content="Shivkumar Patil - Senior Technical Project Manager & QA-DevOps Leader with 16+ years experience">
+    <title>Shivkumar Patil - Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
             margin: 0;
@@ -13,427 +14,603 @@
         }
         
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
-            background: #f4f4f4;
-            padding: 20px;
+            background: #f0f2f5;
         }
         
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            padding: 40px 50px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
-        }
-        
-        .header {
+        .header-hero {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #7e8ba3 100%);
+            color: white;
+            padding: 50px 20px;
             text-align: center;
-            padding-bottom: 20px;
-            border-bottom: 3px solid #1F4788;
-            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
         
-        .header h1 {
-            color: #1F4788;
-            font-size: 2.5em;
+        .header-hero h1 {
+            font-size: 3em;
             margin-bottom: 10px;
+            font-weight: 300;
             letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
         
-        .contact-info {
-            color: #666;
-            font-size: 0.95em;
-            margin-top: 10px;
+        .header-hero .title {
+            font-size: 1.4em;
+            font-weight: 400;
+            margin-bottom: 10px;
+            opacity: 0.95;
         }
         
-        .contact-info a {
-            color: #1F4788;
-            text-decoration: none;
+        .header-hero .tagline {
+            font-size: 1em;
+            opacity: 0.85;
+            max-width: 800px;
+            margin: 0 auto;
         }
         
-        .contact-info a:hover {
-            text-decoration: underline;
+        .main-container {
+            max-width: 1200px;
+            margin: -30px auto 40px;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            display: grid;
+            grid-template-columns: 320px 1fr;
         }
         
-        .section {
-            margin-bottom: 30px;
+        .sidebar {
+            background: linear-gradient(180deg, #34495e 0%, #2c3e50 100%);
+            color: white;
+            padding: 40px 30px;
         }
         
-        .section-title {
-            color: #2C3E50;
-            font-size: 1.5em;
-            border-bottom: 2px solid #2C3E50;
-            padding-bottom: 5px;
+        .sidebar-section {
+            margin-bottom: 35px;
+        }
+        
+        .sidebar-section h2 {
+            font-size: 1.1em;
             margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid rgba(255,255,255,0.3);
             text-transform: uppercase;
             letter-spacing: 1px;
         }
         
-        .subsection-title {
-            color: #34495E;
-            font-size: 1.1em;
-            font-weight: bold;
-            margin-top: 15px;
-            margin-bottom: 10px;
+        .contact-item {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+            font-size: 0.9em;
         }
         
-        .summary {
-            text-align: justify;
-            line-height: 1.8;
-            color: #444;
+        .contact-item i {
+            width: 25px;
+            margin-right: 10px;
+            color: #3498db;
+            font-size: 1.1em;
+        }
+        
+        .contact-item a {
+            color: #3498db;
+            text-decoration: none;
+            word-break: break-word;
+        }
+        
+        .contact-item a:hover {
+            color: #5dade2;
+            text-decoration: underline;
+        }
+        
+        .skill-item {
             margin-bottom: 15px;
+        }
+        
+        .skill-name {
+            font-size: 0.9em;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+        
+        .skill-bar {
+            background: rgba(255,255,255,0.2);
+            height: 8px;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        .skill-fill {
+            background: linear-gradient(90deg, #3498db, #2ecc71);
+            height: 100%;
+            border-radius: 4px;
+            transition: width 1s ease-in-out;
+        }
+        
+        .cert-item {
+            background: rgba(255,255,255,0.1);
+            padding: 12px;
+            border-radius: 6px;
+            margin-bottom: 12px;
+            border-left: 3px solid #3498db;
+        }
+        
+        .cert-item strong {
+            display: block;
+            font-size: 0.95em;
+            margin-bottom: 3px;
+        }
+        
+        .cert-item span {
+            font-size: 0.85em;
+            opacity: 0.9;
+        }
+        
+        .main-content {
+            padding: 40px 50px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .section-title {
+            font-size: 1.8em;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #3498db;
+            display: flex;
+            align-items: center;
+        }
+        
+        .section-title i {
+            margin-right: 15px;
+            color: #3498db;
+        }
+        
+        .summary-text {
+            font-size: 1.05em;
+            line-height: 1.8;
+            color: #555;
+            text-align: justify;
+            background: #f8f9fa;
+            padding: 20px;
+            border-left: 4px solid #3498db;
+            border-radius: 4px;
         }
         
         .job {
             margin-bottom: 30px;
+            padding: 25px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         
-        .job-header {
-            margin-bottom: 10px;
+        .job:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
         
         .job-title {
-            font-size: 1.2em;
-            font-weight: bold;
-            color: #2C3E50;
+            font-size: 1.3em;
+            color: #2c3e50;
+            font-weight: 600;
+            margin-bottom: 8px;
         }
         
         .job-company {
-            font-weight: bold;
-            color: #1F4788;
+            font-size: 1.1em;
+            color: #3498db;
+            font-weight: 600;
+            margin-bottom: 5px;
         }
         
-        .job-details {
-            color: #666;
-            font-style: italic;
-            margin-top: 5px;
+        .job-meta {
+            color: #7f8c8d;
+            font-size: 0.95em;
+            margin-bottom: 5px;
         }
         
         .job-clients {
-            color: #666;
+            color: #95a5a6;
             font-style: italic;
             font-size: 0.9em;
-            margin-top: 3px;
+            margin-bottom: 15px;
         }
         
-        ul {
+        .job ul {
             margin-left: 20px;
-            margin-top: 10px;
         }
         
-        ul li {
+        .job ul li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+            color: #555;
+        }
+        
+        .job ul li strong {
+            color: #2c3e50;
+        }
+        
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        
+        .tech-category {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+            transition: transform 0.3s ease;
+        }
+        
+        .tech-category:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .tech-category strong {
+            color: #2c3e50;
+            display: block;
             margin-bottom: 8px;
+            font-size: 0.95em;
+        }
+        
+        .tech-category span {
+            color: #555;
+            font-size: 0.9em;
             line-height: 1.6;
         }
         
-        .skills-grid {
+        .awards-list {
             display: grid;
-            gap: 12px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 15px;
         }
         
-        .skill-category {
-            padding: 10px;
-            background: #f8f9fa;
-            border-left: 4px solid #1F4788;
+        .award-item {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            transition: transform 0.3s ease;
         }
         
-        .skill-category strong {
-            color: #2C3E50;
+        .award-item:hover {
+            transform: scale(1.05);
         }
         
-        .education, .awards {
-            line-height: 1.8;
+        .award-item i {
+            font-size: 2em;
+            margin-right: 15px;
+            opacity: 0.8;
         }
         
-        .awards ul {
-            list-style: none;
-            margin-left: 0;
-        }
-        
-        .awards ul li:before {
-            content: "🏆 ";
-            margin-right: 8px;
-        }
-        
-        strong {
-            color: #2C3E50;
-        }
-        
-        .highlights {
-            background: #e8f4f8;
-            padding: 20px;
-            border-left: 4px solid #1F4788;
-            margin: 20px 0;
-        }
-        
-        .highlights h3 {
-            color: #1F4788;
-            margin-bottom: 10px;
-        }
-        
-        @media print {
-            body {
-                background: white;
-                padding: 0;
-            }
-            .container {
-                box-shadow: none;
-                padding: 20px;
-            }
-        }
-        
-        @media (max-width: 768px) {
-            .container {
-                padding: 20px;
-            }
-            .header h1 {
-                font-size: 1.8em;
-            }
-            .contact-info {
-                font-size: 0.85em;
-            }
+        .award-text {
+            font-size: 0.9em;
+            line-height: 1.4;
         }
         
         .print-button {
             position: fixed;
             bottom: 30px;
             right: 30px;
-            background: #1F4788;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 15px 25px;
+            padding: 15px 30px;
             border-radius: 50px;
             text-decoration: none;
-            font-weight: bold;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            font-weight: 600;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
             cursor: pointer;
             border: none;
             font-size: 1em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: transform 0.3s ease;
+            z-index: 1000;
         }
         
         .print-button:hover {
-            background: #2C3E50;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.4);
         }
         
         @media print {
+            body {
+                background: white;
+            }
+            .header-hero {
+                background: #2c3e50 !important;
+                padding: 30px 20px;
+            }
+            .main-container {
+                box-shadow: none;
+                margin: 0;
+            }
             .print-button {
                 display: none;
+            }
+            .job:hover {
+                transform: none;
+                box-shadow: none;
+            }
+        }
+        
+        @media (max-width: 968px) {
+            .main-container {
+                grid-template-columns: 1fr;
+                margin: 20px;
+            }
+            
+            .sidebar {
+                padding: 30px 20px;
+            }
+            
+            .main-content {
+                padding: 30px 20px;
+            }
+            
+            .header-hero h1 {
+                font-size: 2em;
+            }
+            
+            .header-hero .title {
+                font-size: 1.1em;
+            }
+            
+            .tech-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .awards-list {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 600px) {
+            .header-hero h1 {
+                font-size: 1.5em;
+            }
+            
+            .section-title {
+                font-size: 1.4em;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>SHIVKUMAR PATIL</h1>
-            <div class="contact-info">
-                Phoenix, AZ | (313) 401-4814 | 
-                <a href="mailto:shivkumar.patil@email.com">shivkumar.patil@email.com</a> | 
-                <a href="https://linkedin.com/in/shivkumarpatil" target="_blank">linkedin.com/in/shivkumarpatil</a>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2 class="section-title">Professional Summary</h2>
-            <div class="summary">
-                <strong>Senior Technical Project Manager & QA-DevOps Leader (CSM)</strong> with 16+ years of expertise in banking, payments, and core banking domains. I drive test strategy, AI-assisted automation, CI/CD transformation, and end-to-end toolchain governance across AWS and Kubernetes/OpenShift to ship compliant, high-throughput systems.
-            </div>
-            <div class="summary">
-                As <strong>Tooling & Platform Owner</strong>, I lead full-cycle evaluation and implementation of QA/Dev/DevOps stacks—from POCs and security/compliance reviews to licensing/ROI and governance. Proven track record of leading large-scale modernization assessments, establishing TCOE from the ground up, and introducing GenAI (GitHub Copilot + internal LLMs) to accelerate test design and improve developer experience within regulated environments.
-            </div>
-        </div>
-
-        <div class="highlights">
-            <h3>Key Achievements</h3>
-            <ul>
-                <li>Led enterprise modernization assessment across <strong>11 core banking products</strong> with phased implementation roadmaps</li>
-                <li>Established <strong>Testing Center of Excellence (TCOE)</strong> with comprehensive governance frameworks</li>
-                <li>Implemented <strong>GenAI-assisted QA</strong> using GitHub Copilot and internal LLMs within regulated environments</li>
-                <li>Built end-to-end <strong>CI/CD pipelines</strong> with automated testing for multiple financial institutions</li>
-                <li>Achieved <strong>85%+ automation coverage</strong> across web, API, and mobile platforms</li>
-                <li>Led global teams of <strong>20+ members</strong> for core banking transformations</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2 class="section-title">Core Competencies</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <strong>QA Leadership & Strategy:</strong> Testing Center of Excellence (TCOE) • Tooling Strategy & Platform Ownership (Evaluation, POCs, ROI, Governance) • Test Strategy • Risk-Based Testing • Regulatory & Compliance Governance • Defect Management
-                </div>
-                <div class="skill-category">
-                    <strong>DevOps, CI/CD & Tooling:</strong> GitLab/GitHub Actions • Jenkins • Docker • Kubernetes (K8s) • OpenShift • AWS (EKS, ECR, Lambda, S3) • JFrog Artifactory • Nexus • Terraform • Ansible
-                </div>
-                <div class="skill-category">
-                    <strong>Test Automation & Observability:</strong> AccelQ • Selenium • Appium • Rest-Assured • Postman/Newman • Cucumber • TestNG • PyTest • Jest • JMeter • Xray • Datadog • Splunk • SonarQube • SAST/SCA
-                </div>
-                <div class="skill-category">
-                    <strong>Agile & Project Management:</strong> Certified Scrum Master (CSM) • Agile Methodologies • Jira Administration (Workflows, Dashboards) • Confluence • Stakeholder & Vendor Management
-                </div>
-                <div class="skill-category">
-                    <strong>Domains & Platforms:</strong> Banking & Financial Services • Payments (RTP, ACH, Wires) • Core Banking (IBM FTM/IBS) • ISO 20022 • SWIFT • Digital Transformation
-                </div>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2 class="section-title">Professional Experience</h2>
-            
-            <div class="job">
-                <div class="job-header">
-                    <div class="job-title">Senior Technical Project Manager / QA-DevOps Leader</div>
-                    <div class="job-details">
-                        <span class="job-company">Persistent Systems</span> | Phoenix, AZ | <em>August 2022 – Present</em>
-                    </div>
-                    <div class="job-clients">Clients: Baldwin Group (Current), Truist, Citizens Bank, Zelle, PNC Bank</div>
-                </div>
-                
-                <div class="subsection-title">Modernization & Strategic Assessment</div>
-                <ul>
-                    <li>Led strategic enterprise modernization assessment across <strong>11 core banking products</strong>, evaluating tech stacks, testing maturity, and DevOps readiness to deliver phased implementation roadmaps</li>
-                    <li>Conducted comprehensive portfolio discovery across 9 additional projects (Salesforce, MuleSoft, QBI DX, Apex, Marketing, Data, Tableau, Security, Medicare), providing gap analysis and strategic recommendations</li>
-                </ul>
-
-                <div class="subsection-title">Tooling & Platform Ownership</div>
-                <ul>
-                    <li>Serve as <strong>Tooling & Platform Owner</strong> for QA/Dev/DevOps stack (GitLab, GitHub Actions, Jenkins, Xray, SonarQube); responsible for bake-offs/POCs, security/compliance reviews, licensing/ROI analysis, rollout, and governance</li>
-                    <li>Evaluated and implemented comprehensive testing toolchain including <strong>AccelQ</strong> (UI automation), <strong>Postman/Newman</strong> (API testing), <strong>PyTest/Jest</strong> (unit testing), <strong>JMeter</strong> (performance testing), and <strong>Xray</strong> (test management)</li>
-                    <li>Established end-to-end quality testing tools ecosystem with standardized processes across Requirements Management, Test Management, Unit Testing, API Testing, UI Automation, Security Testing, Performance Testing, and Monitoring</li>
-                </ul>
-
-                <div class="subsection-title">CI/CD & DevOps Transformation</div>
-                <ul>
-                    <li>Architected and built <strong>CI/CD prototypes to production</strong>, designing pipelines (Docker, Kubernetes/OpenShift, GitLab/GitHub Actions) with automated API/UI test suites and quality gates to accelerate delivery for Tier-1 banking programs</li>
-                    <li>Integrated test automation frameworks with CI/CD pipelines, implementing automated testing for smoke, regression, API, and performance tests with results synchronized to Xray in JIRA and email notifications</li>
-                    <li>Implemented observability and quality gates using Xray, SonarQube, Datadog, and Splunk to create policy-as-code quality gates for regulated releases</li>
-                </ul>
-
-                <div class="subsection-title">GenAI & Innovation</div>
-                <ul>
-                    <li>Pioneered <strong>GenAI-assisted QA & DevEx</strong>, introducing internal LLMs and <strong>GitHub Copilot</strong> for test design acceleration, defect summaries, and documentation generation, all embedded within regulated change controls</li>
-                    <li>Accelerated test case creation and code development productivity while maintaining auditability and compliance standards</li>
-                </ul>
-
-                <div class="subsection-title">QA Leadership & TCOE</div>
-                <ul>
-                    <li>Directed QA for high-volume payment platforms (incl. <strong>IBM FTM/IBS</strong>); established a <strong>Testing Center of Excellence (TCOE)</strong> to implement risk-based coverage, traceability metrics, and auditable release policies</li>
-                    <li>Developed comprehensive test strategies covering Unit → Integration → System → UAT, ensuring regulatory compliance (PCI-DSS, SOX) for banking and payment systems</li>
-                    <li>Scaled reusable automation frameworks (Selenium, Rest-Assured, Appium) with <strong>85%+ functional coverage</strong> across web, API, and mobile platforms</li>
-                </ul>
-
-                <div class="subsection-title">Agile Leadership & Administration</div>
-                <ul>
-                    <li>Serve as <strong>Scrum Master</strong>, facilitating Agile ceremonies (sprint planning, daily standups, retrospectives) and removing impediments for cross-functional teams</li>
-                    <li><strong>Jira Administrator</strong> for multiple projects, including workflow configuration, custom fields, dashboards, permission schemes, and user management for <strong>50+ users</strong></li>
-                    <li>Mentored team members on Agile practices, test automation, DevOps tools, and continuous improvement initiatives</li>
-                </ul>
-
-                <div class="subsection-title">Project Highlights by Client</div>
-                <ul>
-                    <li><strong>Baldwin Group (Current):</strong> Program management for enterprise QA transformation, TCOE establishment, CI/CD pipeline development, and GenAI integration</li>
-                    <li><strong>Citizens Bank:</strong> Developed test automation environments, deployed smoke scripts, set up CI/CD pipelines, and applied best practices for IBM Financial Transaction Manager</li>
-                    <li><strong>Truist Bank:</strong> End-to-end DevOps setup with Docker, Kubernetes/OpenShift, GitLab CI/CD to increase delivery reliability and speed</li>
-                    <li><strong>Zelle/Early Warning Services:</strong> QA leadership for P2P payment platform and common mobile app initiatives (Android/iOS), including API/database testing and payment network validation</li>
-                    <li><strong>PNC Bank:</strong> Enhanced test automation processes for IBM Financial Transaction Manager, focusing on deployment pipeline optimization and quality assurance frameworks</li>
-                </ul>
-            </div>
-
-            <div class="job">
-                <div class="job-header">
-                    <div class="job-title">Delivery Module Lead / Senior Test Manager</div>
-                    <div class="job-details">
-                        <span class="job-company">Mphasis Corporation</span> | USA & India | <em>April 2009 – August 2022</em>
-                    </div>
-                    <div class="job-clients">Clients: First Republic Bank, Advisor Group, AIG VALIC, GM Financial, HP, Symantec</div>
-                </div>
-                <ul>
-                    <li>Directed end-to-end quality for core banking transformation programs, leading <strong>20+ member global teams</strong> (onshore/offshore) and coordinating with 12+ integrated systems and multiple vendors</li>
-                    <li>Managed full Software Testing Life Cycle (STLC) in complex Agile environments, from requirements analysis and test planning to production validation and defect triage</li>
-                    <li>Achieved <strong>#1 ranking in Defect Management</strong> at First Republic Bank through implementation of robust testing strategies and quality metrics</li>
-                    <li>Established <strong>Testing Center of Excellence (TCOE)</strong> best practices and defined quality metrics for digital insurance platforms</li>
-                    <li>Architected and scaled reusable, cross-platform test automation frameworks using <strong>Selenium, Appium, Rest-Assured, TestNG, and Cucumber</strong> integrated into CI/CD pipelines</li>
-                    <li>Evolved from traditional QA leadership to DevOps transformation initiatives (2018-2022), implementing Jenkins pipelines, Docker containerization, and Kubernetes orchestration</li>
-                    <li>Oversaw all cross-platform/browser testing (iOS, Android, Web) on physical devices and cloud-based platforms (Perfecto, BrowserStack)</li>
-                    <li>Collaborated with infrastructure teams to establish production-like environments with automated provisioning and configuration management for secure financial systems</li>
-                    <li>Conducted comprehensive API, database, and integration testing for mission-critical banking workflows</li>
-                    <li>Provided coaching and domain-specific training to QA teams on banking processes, insurance workflows, and testing best practices</li>
-                </ul>
-            </div>
-
-            <div class="job">
-                <div class="job-header">
-                    <div class="job-title">Senior Software Test Engineer / Test Execution Lead</div>
-                    <div class="job-details">
-                        <span class="job-company">Oak Systems & Mphasis Limited</span> | India | <em>March 2008 – April 2009</em>
-                    </div>
-                    <div class="job-clients">Client: Symantec Corporation</div>
-                </div>
-                <ul>
-                    <li>Developed and executed comprehensive test automation suites for functional, integration, system, database, and API testing of Symantec's ERP and Salesforce applications</li>
-                    <li>Led requirements analysis and test scenario creation for complex legacy system migration projects</li>
-                    <li>Managed defect tracking and documentation in ALM/QC, collaborating with developers to ensure timely resolution</li>
-                    <li>Executed GUI, functional, and integration test cases for Symantec's web applications</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <strong>Cloud & Containers:</strong> AWS (EKS, ECR, Lambda, S3, CloudWatch) • Kubernetes/OpenShift • Docker
-                </div>
-                <div class="skill-category">
-                    <strong>CI/CD & SCM:</strong> GitLab • GitHub Actions • Jenkins • Git • JFrog Artifactory • Nexus • Maven • Gradle • Terraform • Ansible
-                </div>
-                <div class="skill-category">
-                    <strong>Testing & QA:</strong> AccelQ • Selenium • Appium • Rest-Assured • Postman/Newman • SoapUI • PyTest • Jest • TestNG • Cucumber • JMeter • Xray • BrowserStack • Perfecto
-                </div>
-                <div class="skill-category">
-                    <strong>Quality & Security:</strong> SonarQube • SAST/SCA • GitHub Advanced Security (GHAS) • OWASP
-                </div>
-                <div class="skill-category">
-                    <strong>Observability & Monitoring:</strong> Datadog • Splunk • CloudWatch
-                </div>
-                <div class="skill-category">
-                    <strong>Project Management:</strong> Jira (Administration) • Confluence • Rally • ServiceNow • MS Project
-                </div>
-                <div class="skill-category">
-                    <strong>Programming & Databases:</strong> Java • Python • JavaScript • SQL • Oracle • MySQL • PostgreSQL • MongoDB • Snowflake
-                </div>
-                <div class="skill-category">
-                    <strong>Methodologies:</strong> Agile/Scrum • Kanban • SAFe • DevOps • Continuous Testing
-                </div>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2 class="section-title">Education & Certifications</h2>
-            <div class="education">
-                <p><strong>Bachelor of Engineering</strong> | Gulbarga University, India</p>
-                <p><strong>Certified Scrum Master (CSM)</strong> | Scrum Alliance | ID: 001547545 | July 2023</p>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2 class="section-title">Awards & Recognition</h2>
-            <div class="awards">
-                <ul>
-                    <li><strong>High Five Award</strong> – Persistent Systems (Baldwin Project Delivery)</li>
-                    <li><strong>#1 in Defect Management</strong> – First Republic Bank (2022)</li>
-                    <li><strong>Consumer IT Star & Galaxy Award</strong> – AIG VALIC (2016)</li>
-                    <li><strong>Triumph Individual Award</strong> – HP (2012)</li>
-                    <li><strong>Client Recognition Awards</strong> – Symantec Corporation (2010, 2012)</li>
-                    <li><strong>Test Strategy Excellence</strong> – GM OnStar</li>
-                </ul>
-            </div>
-        </div>
+    <!-- Hero Header -->
+    <div class="header-hero">
+        <h1>SHIVKUMAR PATIL</h1>
+        <div class="title">Senior Technical Project Manager | QA-DevOps Leader | CSM</div>
+        <div class="tagline">16+ Years Driving Quality, Innovation & Digital Transformation in Banking & Payments</div>
     </div>
 
-    <button class="print-button" onclick="window.print()">📄 Print / Save as PDF</button>
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <!-- Contact Section -->
+            <div class="sidebar-section">
+                <h2><i class="fas fa-address-card"></i> Contact</h2>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Phoenix, AZ</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>(313) 401-4814</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:shivkumar.patil@email.com">shivkumar.patil@email.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <a href="https://linkedin.com/in/shivkumarpatil" target="_blank">linkedin.com/in/shivkumarpatil</a>
+                </div>
+            </div>
+
+            <!-- Key Skills -->
+            <div class="sidebar-section">
+                <h2><i class="fas fa-star"></i> Core Skills</h2>
+                <div class="skill-item">
+                    <div class="skill-name">QA Leadership & TCOE</div>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 95%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">CI/CD & DevOps</div>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">Test Automation</div>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 95%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">AWS & Kubernetes</div>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">Agile & Scrum</div>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">GenAI & Innovation</div>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+                </div>
+            </div>
+
+            <!-- Education & Certifications -->
+            <div class="sidebar-section">
+                <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+                <div class="cert-item">
+                    <strong>Bachelor of Engineering</strong>
+                    <span>Gulbarga University, India</span>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h2><i class="fas fa-certificate"></i> Certifications</h2>
+                <div class="cert-item">
+                    <strong>Certified Scrum Master</strong>
+                    <span>Scrum Alliance<br>ID: 001547545</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Professional Summary -->
+            <section class="section">
+                <h2 class="section-title"><i class="fas fa-user-circle"></i> Professional Summary</h2>
+                <div class="summary-text">
+                    <strong>Senior Technical Project Manager & QA-DevOps Leader (CSM)</strong> with 16+ years driving test strategy, AI-assisted automation, and CI/CD transformation across AWS and Kubernetes/OpenShift for banking and payments. <strong>Tooling & Platform Owner</strong> leading full-cycle QA/DevOps stack evaluation—from POCs and security reviews to ROI and governance. Led enterprise modernization across <strong>11 products</strong>, established <strong>TCOE</strong>, and pioneered <strong>GenAI</strong> (GitHub Copilot + LLMs) for test acceleration in regulated environments.
+                </div>
+            </section>
+
+            <!-- Professional Experience -->
+            <section class="section">
+                <h2 class="section-title"><i class="fas fa-briefcase"></i> Professional Experience</h2>
+                
+                <div class="job">
+                    <div class="job-title">Senior Technical Project Manager / QA-DevOps Leader</div>
+                    <div class="job-company">Persistent Systems</div>
+                    <div class="job-meta"><i class="far fa-calendar-alt"></i> Phoenix, AZ | August 2022 – Present</div>
+                    <div class="job-clients"><i class="fas fa-building"></i> Clients: Baldwin Group, Truist, Citizens Bank, Zelle, PNC Bank</div>
+                    <ul>
+                        <li>Led enterprise modernization assessment across <strong>11 core banking products and 9 additional projects</strong>, evaluating tech stacks, testing maturity, and DevOps readiness with phased implementation roadmaps</li>
+                        <li>Serve as <strong>Tooling & Platform Owner</strong> for QA/Dev/DevOps stack—responsible for bake-offs/POCs, security/compliance reviews, licensing/ROI, and governance; implemented <strong>AccelQ, Postman/Newman, PyTest/Jest, JMeter, and Xray</strong></li>
+                        <li>Architected <strong>CI/CD pipelines</strong> (Docker, Kubernetes/OpenShift, GitLab/GitHub Actions) with automated API/UI test suites, quality gates (Xray, SonarQube, Datadog, Splunk), and policy-as-code for Tier-1 banking programs</li>
+                        <li>Pioneered <strong>GenAI-assisted QA</strong> introducing GitHub Copilot and internal LLMs for test design acceleration, defect summaries, and documentation within regulated change controls</li>
+                        <li>Established <strong>TCOE</strong> with risk-based coverage, traceability metrics, and auditable release policies for high-volume payment platforms (IBM FTM/IBS); ensured PCI-DSS and SOX compliance</li>
+                        <li>Scaled reusable automation frameworks (Selenium, Rest-Assured, Appium) achieving <strong>85%+ functional coverage</strong> across web, API, and mobile platforms</li>
+                        <li>Serve as <strong>Scrum Master and Jira Administrator</strong>, facilitating Agile ceremonies and managing workflows, dashboards, and permissions for <strong>50+ users</strong></li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <div class="job-title">Delivery Module Lead / Senior Test Manager</div>
+                    <div class="job-company">Mphasis Corporation</div>
+                    <div class="job-meta"><i class="far fa-calendar-alt"></i> USA & India | April 2009 – August 2022</div>
+                    <div class="job-clients"><i class="fas fa-building"></i> Clients: First Republic Bank, Advisor Group, AIG VALIC, GM Financial, HP, Symantec</div>
+                    <ul>
+                        <li>Directed end-to-end quality for core banking transformations, leading <strong>20+ member global teams</strong> across 12+ integrated systems; achieved <strong>#1 ranking in Defect Management</strong> at First Republic Bank</li>
+                        <li>Established <strong>TCOE best practices</strong> and quality metrics for digital platforms; managed full STLC in complex Agile environments ensuring regulatory compliance (SOX, PCI-DSS)</li>
+                        <li>Architected cross-platform test automation frameworks (Selenium, Appium, Rest-Assured, TestNG, Cucumber) integrated into CI/CD pipelines</li>
+                        <li>Evolved to DevOps transformation (2018-2022), implementing Jenkins pipelines, Docker containerization, and Kubernetes orchestration</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <div class="job-title">Senior Software Test Engineer / Test Execution Lead</div>
+                    <div class="job-company">Oak Systems & Mphasis Limited</div>
+                    <div class="job-meta"><i class="far fa-calendar-alt"></i> India | March 2008 – April 2009</div>
+                    <div class="job-clients"><i class="fas fa-building"></i> Client: Symantec Corporation</div>
+                    <p style="margin-top: 10px; line-height: 1.6; color: #555;">Developed and executed comprehensive test automation for functional, integration, and API testing; managed defect tracking for ERP and Salesforce applications</p>
+                </div>
+            </section>
+
+            <!-- Technical Skills -->
+            <section class="section">
+                <h2 class="section-title"><i class="fas fa-code"></i> Technical Skills</h2>
+                <div class="tech-grid">
+                    <div class="tech-category">
+                        <strong>Cloud & Containers</strong>
+                        <span>AWS (EKS, ECR, Lambda, S3, CloudWatch) • Kubernetes/OpenShift • Docker</span>
+                    </div>
+                    <div class="tech-category">
+                        <strong>CI/CD & SCM</strong>
+                        <span>GitLab • GitHub Actions • Jenkins • Git • JFrog • Nexus • Maven • Gradle • Terraform • Ansible</span>
+                    </div>
+                    <div class="tech-category">
+                        <strong>Testing & QA</strong>
+                        <span>AccelQ • Selenium • Appium • Rest-Assured • Postman/Newman • PyTest • Jest • JMeter • Xray • BrowserStack</span>
+                    </div>
+                    <div class="tech-category">
+                        <strong>Quality & Security</strong>
+                        <span>SonarQube • SAST/SCA • GitHub Advanced Security • OWASP</span>
+                    </div>
+                    <div class="tech-category">
+                        <strong>Observability</strong>
+                        <span>Datadog • Splunk • CloudWatch</span>
+                    </div>
+                    <div class="tech-category">
+                        <strong>Project Management</strong>
+                        <span>Jira (Admin) • Confluence • Rally • ServiceNow • MS Project</span>
+                    </div>
+                    <div class="tech-category">
+                        <strong>Programming & Databases</strong>
+                        <span>Java • Python • JavaScript • SQL • Oracle • MySQL • PostgreSQL • MongoDB • Snowflake</span>
+                    </div>
+                    <div class="tech-category">
+                        <strong>Methodologies</strong>
+                        <span>Agile/Scrum • Kanban • SAFe • DevOps • Continuous Testing</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Awards -->
+            <section class="section">
+                <h2 class="section-title"><i class="fas fa-trophy"></i> Awards & Recognition</h2>
+                <div class="awards-list">
+                    <div class="award-item">
+                        <i class="fas fa-award"></i>
+                        <div class="award-text">High Five Award<br><small>Persistent Systems</small></div>
+                    </div>
+                    <div class="award-item">
+                        <i class="fas fa-medal"></i>
+                        <div class="award-text">#1 Defect Management<br><small>First Republic Bank</small></div>
+                    </div>
+                    <div class="award-item">
+                        <i class="fas fa-star"></i>
+                        <div class="award-text">Consumer IT Star & Galaxy<br><small>AIG VALIC</small></div>
+                    </div>
+                    <div class="award-item">
+                        <i class="fas fa-trophy"></i>
+                        <div class="award-text">Triumph Award<br><small>HP</small></div>
+                    </div>
+                    <div class="award-item">
+                        <i class="fas fa-certificate"></i>
+                        <div class="award-text">Client Recognition Awards<br><small>Symantec Corporation</small></div>
+                    </div>
+                    <div class="award-item">
+                        <i class="fas fa-award"></i>
+                        <div class="award-text">Test Strategy Excellence<br><small>GM OnStar</small></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <button class="print-button" onclick="window.print()">
+        <i class="fas fa-print"></i> Print / Save as PDF
+    </button>
 
     <script>
+        // Animate skill bars on load
+        window.addEventListener('load', function() {
+            const skillFills = document.querySelectorAll('.skill-fill');
+            skillFills.forEach(fill => {
+                const width = fill.style.width;
+                fill.style.width = '0';
+                setTimeout(() => {
+                    fill.style.width = width;
+                }, 100);
+            });
+        });
+
+        // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
