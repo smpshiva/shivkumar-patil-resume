@@ -3,13 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Shivkumar Patil — Technical Delivery Manager & Principal QA Architect with 17+ years in BFSI. Relocating to Pune, India April 2026.">
-    <meta name="author" content="Shivkumar Patil">
-    <meta name="keywords" content="Technical Delivery Manager, QA Architect, Program Manager, Agile, Scrum Master, DevOps, BFSI, Banking Technology, GenAI, Pune India">
-    <meta property="og:title" content="Shivkumar Patil — Technical Delivery Manager | Principal QA Architect">
-    <meta property="og:description" content="17+ years delivering enterprise programs for Tier-1 US Banks. Citizens Bank, Zelle, Truist, PNC, First Republic. Relocating to Pune April 2026.">
-    <meta property="og:type" content="website">
-    <title>Shivkumar Patil — Technical Delivery Manager | Principal QA Architect</title>
+    <meta name="description" content="Shivkumar Patil — Technical Delivery Manager & Principal QA Architect | 17+ years BFSI | Relocating to Pune, India April 2026">
+    <meta name="keywords" content="Technical Delivery Manager, QA Architect, SDET Lead, DevOps, Program Manager, BFSI, Banking, GenAI, Pune India, CSM">
+    <title>Shivkumar Patil — Technical Delivery Manager | Principal QA Architect | BFSI</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -17,1241 +13,804 @@
 
     <style>
         :root {
-            --navy: #0B1F3A;
-            --navy-mid: #152D4F;
-            --navy-light: #1E3F6E;
-            --teal: #0A7EA4;
-            --teal-light: #38BDF8;
-            --gold: #F0A500;
-            --gold-light: #FCD34D;
-            --white: #FFFFFF;
-            --off-white: #F8FAFC;
-            --gray-100: #F1F5F9;
-            --gray-200: #E2E8F0;
-            --gray-300: #CBD5E1;
-            --gray-500: #64748B;
-            --gray-600: #475569;
-            --gray-700: #334155;
-            --gray-900: #0F172A;
-            --success: #059669;
-            --radius-sm: 8px;
-            --radius-md: 14px;
-            --radius-lg: 22px;
-            --shadow-card: 0 4px 24px rgba(11,31,58,0.10);
-            --shadow-hover: 0 12px 40px rgba(11,31,58,0.18);
-            --transition: all 0.35s cubic-bezier(0.4,0,0.2,1);
-        }
-
-        * { margin:0; padding:0; box-sizing:border-box; }
-        html { scroll-behavior: smooth; }
-
-        body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            background: var(--off-white);
-            color: var(--gray-700);
-            line-height: 1.65;
-            overflow-x: hidden;
-        }
-
-        /* ── SCROLL PROGRESS ───────────────────────────────────────────── */
-        .progress-bar {
-            position: fixed; top: 0; left: 0; height: 3px;
-            background: linear-gradient(90deg, var(--teal), var(--gold));
-            z-index: 9999; width: 0%; transition: width 0.1s linear;
-        }
-
-        /* ── HEADER ─────────────────────────────────────────────────────── */
-        header {
-            background: var(--navy);
-            color: var(--white);
-            padding: 70px 0 60px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        header::before {
-            content: '';
-            position: absolute; inset: 0;
-            background:
-                radial-gradient(ellipse 80% 60% at 110% -10%, rgba(10,126,164,0.35) 0%, transparent 60%),
-                radial-gradient(ellipse 50% 80% at -10% 120%, rgba(240,165,0,0.12) 0%, transparent 55%);
-        }
-
-        /* geometric lines decoration */
-        header::after {
-            content: '';
-            position: absolute; inset: 0;
-            background-image:
-                repeating-linear-gradient(
-                    -45deg,
-                    transparent,
-                    transparent 40px,
-                    rgba(255,255,255,0.015) 40px,
-                    rgba(255,255,255,0.015) 41px
-                );
-        }
-
-        .header-inner {
-            max-width: 1080px;
-            margin: 0 auto;
-            padding: 0 40px;
-            position: relative;
-            z-index: 2;
-        }
-
-        .relocation-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: rgba(240,165,0,0.18);
-            border: 1px solid rgba(240,165,0,0.45);
-            color: var(--gold-light);
-            padding: 6px 16px;
-            border-radius: 30px;
-            font-size: 0.78rem;
-            font-weight: 600;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-            margin-bottom: 22px;
-            animation: fadeSlideDown 0.7s ease-out 0.2s both;
-        }
-
-        .relocation-badge i { font-size: 0.85rem; }
-
-        h1.name {
-            font-family: 'DM Serif Display', serif;
-            font-size: clamp(2.4rem, 5vw, 3.8rem);
-            font-weight: 400;
-            letter-spacing: -0.5px;
-            color: var(--white);
-            line-height: 1.1;
-            margin-bottom: 14px;
-            animation: fadeSlideDown 0.7s ease-out 0.35s both;
-        }
-
-        .headline {
-            font-size: clamp(0.9rem, 1.8vw, 1.05rem);
-            color: var(--teal-light);
-            font-weight: 500;
-            letter-spacing: 0.3px;
-            margin-bottom: 32px;
-            animation: fadeSlideDown 0.7s ease-out 0.5s both;
-        }
-
-        .headline span {
-            color: rgba(255,255,255,0.5);
-            margin: 0 8px;
-        }
-
-        .contact-row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            animation: fadeSlideUp 0.7s ease-out 0.65s both;
-        }
-
-        .contact-chip {
-            display: inline-flex;
-            align-items: center;
-            gap: 9px;
-            background: rgba(255,255,255,0.07);
-            border: 1px solid rgba(255,255,255,0.12);
-            color: rgba(255,255,255,0.88);
-            padding: 8px 16px;
-            border-radius: 30px;
-            font-size: 0.875rem;
-            text-decoration: none;
-            transition: var(--transition);
-            backdrop-filter: blur(4px);
-        }
-
-        .contact-chip:hover {
-            background: rgba(255,255,255,0.14);
-            border-color: rgba(255,255,255,0.25);
-            transform: translateY(-2px);
-            color: var(--white);
-        }
-
-        .contact-chip i { color: var(--gold-light); font-size: 0.85rem; }
-
-        .avail-note {
-            margin-top: 24px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 0.82rem;
-            color: rgba(255,255,255,0.55);
-            animation: fadeSlideUp 0.7s ease-out 0.8s both;
-        }
-
-        .avail-dot {
-            width: 8px; height: 8px;
-            background: #22C55E;
-            border-radius: 50%;
-            box-shadow: 0 0 0 3px rgba(34,197,94,0.25);
-            animation: pulse-dot 2s infinite;
-        }
-
-        @keyframes pulse-dot {
-            0%,100% { box-shadow: 0 0 0 3px rgba(34,197,94,0.25); }
-            50% { box-shadow: 0 0 0 6px rgba(34,197,94,0.08); }
-        }
-
-        /* ── NAV TABS ───────────────────────────────────────────────────── */
-        .nav-tabs {
-            position: sticky; top: 0; z-index: 100;
-            background: var(--navy-mid);
-            border-bottom: 1px solid rgba(255,255,255,0.06);
-        }
-
-        .nav-tabs-inner {
-            max-width: 1080px;
-            margin: 0 auto;
-            padding: 0 40px;
-            display: flex;
-            gap: 0;
-            overflow-x: auto;
-            scrollbar-width: none;
-        }
-
-        .nav-tabs-inner::-webkit-scrollbar { display: none; }
-
-        .nav-tab {
-            padding: 16px 20px;
-            font-size: 0.82rem;
-            font-weight: 600;
-            letter-spacing: 0.4px;
-            color: rgba(255,255,255,0.5);
-            text-decoration: none;
-            text-transform: uppercase;
-            white-space: nowrap;
-            border-bottom: 2px solid transparent;
-            transition: var(--transition);
-        }
-
-        .nav-tab:hover, .nav-tab.active {
-            color: var(--teal-light);
-            border-bottom-color: var(--teal);
-        }
-
-        /* ── MAIN LAYOUT ────────────────────────────────────────────────── */
-        main {
-            max-width: 1080px;
-            margin: 0 auto;
-            padding: 50px 40px 80px;
-        }
-
-        /* ── SECTION ────────────────────────────────────────────────────── */
-        .section {
-            margin-bottom: 60px;
-            opacity: 0;
-            transform: translateY(28px);
-            transition: opacity 0.55s ease, transform 0.55s ease;
-        }
-
-        .section.visible { opacity: 1; transform: translateY(0); }
-
-        .section-header {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            margin-bottom: 28px;
-        }
-
-        .section-icon {
-            width: 38px; height: 38px;
-            background: linear-gradient(135deg, var(--teal), var(--navy-light));
-            border-radius: 10px;
-            display: flex; align-items: center; justify-content: center;
-            color: var(--white);
-            font-size: 0.9rem;
-            flex-shrink: 0;
-        }
-
-        .section-title {
-            font-family: 'DM Serif Display', serif;
-            font-size: 1.55rem;
-            font-weight: 400;
-            color: var(--navy);
-            letter-spacing: -0.3px;
-        }
-
-        .section-line {
-            flex: 1;
-            height: 1px;
-            background: linear-gradient(90deg, var(--gray-200), transparent);
-        }
-
-        /* ── SUMMARY ────────────────────────────────────────────────────── */
-        .summary-block {
-            background: var(--white);
-            border-radius: var(--radius-lg);
-            padding: 36px 38px;
-            border-left: 4px solid var(--teal);
-            box-shadow: var(--shadow-card);
-            font-size: 1.0rem;
-            color: var(--gray-600);
-            line-height: 1.8;
-            transition: var(--transition);
-        }
-
-        .summary-block:hover { box-shadow: var(--shadow-hover); }
-        .summary-block strong { color: var(--navy); font-weight: 700; }
-
-        /* ── COMPETENCIES ───────────────────────────────────────────────── */
-        .competency-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 18px;
-        }
-
-        .comp-card {
-            background: var(--white);
-            border-radius: var(--radius-md);
-            padding: 26px 24px;
-            box-shadow: var(--shadow-card);
-            border-top: 3px solid transparent;
-            transition: var(--transition);
-        }
-
-        .comp-card:nth-child(1) { border-top-color: var(--teal); }
-        .comp-card:nth-child(2) { border-top-color: var(--gold); }
-        .comp-card:nth-child(3) { border-top-color: var(--navy-light); }
-
-        .comp-card:hover {
-            transform: translateY(-6px);
-            box-shadow: var(--shadow-hover);
-        }
-
-        .comp-label {
-            font-size: 0.72rem;
-            font-weight: 800;
-            letter-spacing: 1.2px;
-            text-transform: uppercase;
-            color: var(--teal);
-            margin-bottom: 10px;
-        }
-
-        .comp-card:nth-child(2) .comp-label { color: var(--gold); }
-        .comp-card:nth-child(3) .comp-label { color: var(--navy-light); }
-
-        .comp-title {
-            font-size: 0.98rem;
-            font-weight: 700;
-            color: var(--navy);
-            margin-bottom: 10px;
-        }
-
-        .comp-text {
-            font-size: 0.875rem;
-            color: var(--gray-500);
-            line-height: 1.7;
-        }
-
-        /* ── EXPERIENCE ─────────────────────────────────────────────────── */
-        .exp-timeline { display: flex; flex-direction: column; gap: 28px; }
-
-        .exp-card {
-            background: var(--white);
-            border-radius: var(--radius-lg);
-            box-shadow: var(--shadow-card);
-            overflow: hidden;
-            transition: var(--transition);
-            opacity: 0;
-            transform: translateX(-20px);
-        }
-
-        .exp-card.visible { opacity: 1; transform: translateX(0); }
-        .exp-card:hover { box-shadow: var(--shadow-hover); }
-
-        .exp-card-header {
-            padding: 26px 30px 20px;
-            background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
-            color: var(--white);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .exp-card-header::after {
-            content: '';
-            position: absolute;
-            right: -40px; top: -40px;
-            width: 160px; height: 160px;
-            background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 70%);
-        }
-
-        .exp-title-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .exp-role {
-            font-size: 1.1rem;
-            font-weight: 700;
-            color: var(--white);
-            line-height: 1.3;
-        }
-
-        .exp-dates {
-            background: rgba(10,126,164,0.35);
-            border: 1px solid rgba(56,189,248,0.3);
-            color: var(--teal-light);
-            padding: 4px 14px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            white-space: nowrap;
-            flex-shrink: 0;
-        }
-
-        .exp-company-row {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-            margin-top: 10px;
-            flex-wrap: wrap;
-        }
-
-        .exp-company {
-            font-size: 0.9rem;
-            font-weight: 600;
-            color: var(--teal-light);
-        }
-
-        .exp-location {
-            font-size: 0.82rem;
-            color: rgba(255,255,255,0.5);
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-
-        .exp-clients {
-            margin-top: 10px;
-            font-size: 0.8rem;
-            color: rgba(255,255,255,0.5);
-            font-style: italic;
-        }
-
-        .exp-clients strong {
-            color: var(--gold-light);
-            font-style: normal;
-        }
-
-        .exp-card-body {
-            padding: 24px 30px 28px;
-        }
-
-        .exp-bullets { list-style: none; display: flex; flex-direction: column; gap: 14px; }
-
-        .exp-bullets li {
-            display: flex;
-            gap: 14px;
-            font-size: 0.92rem;
-            color: var(--gray-600);
-            line-height: 1.7;
-            transition: var(--transition);
-        }
-
-        .exp-bullets li:hover { color: var(--gray-900); }
-
-        .bullet-dot {
-            width: 7px; height: 7px;
-            background: var(--teal);
-            border-radius: 50%;
-            margin-top: 8px;
-            flex-shrink: 0;
-        }
-
-        .bullet-label {
-            font-weight: 700;
-            color: var(--navy);
-        }
-
-        .metric-pill {
-            display: inline-flex;
-            align-items: center;
-            background: linear-gradient(135deg, var(--teal), var(--navy-light));
-            color: var(--white);
-            padding: 2px 10px;
-            border-radius: 20px;
-            font-size: 0.78rem;
-            font-weight: 700;
-            margin: 0 2px;
-        }
-
-        /* Current/Founder badge */
-        .current-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            background: rgba(5,150,105,0.2);
-            border: 1px solid rgba(5,150,105,0.4);
-            color: #6EE7B7;
-            padding: 3px 12px;
-            border-radius: 20px;
-            font-size: 0.72rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-left: 8px;
-        }
-
-        .current-badge::before {
-            content: '';
-            width: 6px; height: 6px;
-            background: #22C55E;
-            border-radius: 50%;
-            animation: pulse-dot 2s infinite;
-        }
-
-        /* ── SKILLS ─────────────────────────────────────────────────────── */
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 16px;
-        }
-
-        .skill-card {
-            background: var(--white);
-            border-radius: var(--radius-md);
-            padding: 20px 22px;
-            box-shadow: var(--shadow-card);
-            transition: var(--transition);
-            display: flex;
-            gap: 16px;
-            align-items: flex-start;
-        }
-
-        .skill-card:hover {
-            transform: translateY(-4px);
-            box-shadow: var(--shadow-hover);
-        }
-
-        .skill-icon {
-            width: 36px; height: 36px;
-            border-radius: 9px;
-            display: flex; align-items: center; justify-content: center;
-            font-size: 0.85rem;
-            flex-shrink: 0;
-            color: var(--white);
-        }
-
-        .skill-icon.teal { background: linear-gradient(135deg, var(--teal), #0369A1); }
-        .skill-icon.gold { background: linear-gradient(135deg, var(--gold), #D97706); }
-        .skill-icon.navy { background: linear-gradient(135deg, var(--navy-light), var(--navy)); }
-        .skill-icon.green { background: linear-gradient(135deg, #059669, #047857); }
-        .skill-icon.purple { background: linear-gradient(135deg, #7C3AED, #5B21B6); }
-        .skill-icon.red { background: linear-gradient(135deg, #DC2626, #B91C1C); }
-        .skill-icon.slate { background: linear-gradient(135deg, #475569, #334155); }
-
-        .skill-label {
-            font-size: 0.72rem;
-            font-weight: 800;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            color: var(--teal);
-            margin-bottom: 5px;
-        }
-
-        .skill-list {
-            font-size: 0.875rem;
-            color: var(--gray-500);
-            line-height: 1.7;
-        }
-
-        /* ── EDUCATION & CERTS ──────────────────────────────────────────── */
-        .edu-grid {
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: 18px;
-            align-items: start;
-        }
-
-        .edu-card {
-            background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
-            color: var(--white);
-            border-radius: var(--radius-lg);
-            padding: 30px 28px;
-            box-shadow: var(--shadow-card);
-        }
-
-        .edu-degree {
-            font-family: 'DM Serif Display', serif;
-            font-size: 1.2rem;
-            margin-bottom: 6px;
-        }
-
-        .edu-institution {
-            font-size: 0.875rem;
-            color: var(--teal-light);
-        }
-
-        .edu-icon-big {
-            font-size: 2.4rem;
-            color: rgba(255,255,255,0.15);
-            margin-bottom: 16px;
-        }
-
-        .cert-grid {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-
-        .cert-card {
-            background: var(--white);
-            border-radius: var(--radius-md);
-            padding: 18px 20px;
-            display: flex;
-            align-items: center;
-            gap: 16px;
-            box-shadow: var(--shadow-card);
-            transition: var(--transition);
-            border-left: 3px solid var(--teal);
-        }
-
-        .cert-card:nth-child(2) { border-left-color: var(--gold); }
-        .cert-card:nth-child(3) { border-left-color: var(--navy-light); }
-        .cert-card:nth-child(4) { border-left-color: var(--success); }
-
-        .cert-card:hover { transform: translateX(6px); box-shadow: var(--shadow-hover); }
-
-        .cert-icon {
-            width: 38px; height: 38px;
-            border-radius: 10px;
-            background: var(--gray-100);
-            display: flex; align-items: center; justify-content: center;
-            font-size: 1rem;
-            flex-shrink: 0;
-        }
-
-        .cert-name {
-            font-size: 0.9rem;
-            font-weight: 700;
-            color: var(--navy);
-            line-height: 1.3;
-        }
-
-        .cert-issuer {
-            font-size: 0.8rem;
-            color: var(--gray-500);
-            margin-top: 2px;
-        }
-
-        /* ── AWARDS ─────────────────────────────────────────────────────── */
-        .awards-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 16px;
-        }
-
-        .award-card {
-            background: var(--white);
-            border-radius: var(--radius-md);
-            padding: 22px 20px;
-            box-shadow: var(--shadow-card);
-            transition: var(--transition);
-            position: relative;
-            overflow: hidden;
-            border-top: 3px solid var(--gold);
-        }
-
-        .award-card:hover {
-            transform: translateY(-6px);
-            box-shadow: var(--shadow-hover);
-        }
-
-        .award-card::after {
-            content: '★';
-            position: absolute;
-            right: 10px; bottom: 5px;
-            font-size: 3.5rem;
-            color: rgba(240,165,0,0.07);
-            line-height: 1;
-        }
-
-        .award-year {
-            font-size: 0.7rem;
-            font-weight: 800;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            color: var(--gold);
-            margin-bottom: 6px;
-        }
-
-        .award-title {
-            font-size: 0.92rem;
-            font-weight: 700;
-            color: var(--navy);
-            margin-bottom: 5px;
-            line-height: 1.3;
-        }
-
-        .award-org {
-            font-size: 0.8rem;
-            color: var(--gray-500);
-        }
-
-        /* ── FOOTER ─────────────────────────────────────────────────────── */
-        footer {
-            background: var(--navy);
-            color: rgba(255,255,255,0.55);
-            text-align: center;
-            padding: 40px 20px;
-            font-size: 0.875rem;
-        }
-
-        footer strong { color: rgba(255,255,255,0.8); }
-
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 28px;
-            margin-top: 18px;
-        }
-
-        .footer-links a {
-            color: rgba(255,255,255,0.45);
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 7px;
-            font-size: 0.82rem;
-            font-weight: 500;
-            transition: var(--transition);
-        }
-
-        .footer-links a:hover { color: var(--teal-light); }
-
-        /* ── ANIMATIONS ─────────────────────────────────────────────────── */
-        @keyframes fadeSlideDown {
-            from { opacity: 0; transform: translateY(-20px); }
-            to   { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes fadeSlideUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to   { opacity: 1; transform: translateY(0); }
-        }
-
-        /* ── RESPONSIVE ─────────────────────────────────────────────────── */
-        @media (max-width: 900px) {
-            .competency-grid { grid-template-columns: 1fr; }
-            .awards-grid { grid-template-columns: repeat(2, 1fr); }
-            .edu-grid { grid-template-columns: 1fr; }
-        }
-
-        @media (max-width: 680px) {
-            header { padding: 50px 0 45px; }
-            .header-inner, .nav-tabs-inner, main { padding-left: 20px; padding-right: 20px; }
-            h1.name { font-size: 2rem; }
-            .skills-grid { grid-template-columns: 1fr; }
-            .awards-grid { grid-template-columns: 1fr; }
-            .exp-card-header, .exp-card-body { padding: 20px; }
-        }
-
-        @media print {
-            .progress-bar, .nav-tabs { display: none; }
-            .section, .exp-card { opacity: 1 !important; transform: none !important; }
+            --navy:        #0B1F3A;
+            --navy-mid:    #132B50;
+            --navy-light:  #1E3F6E;
+            --teal:        #0A7EA4;
+            --teal-light:  #38BDF8;
+            --gold:        #F0A500;
+            --gold-light:  #FCD34D;
+            --white:       #FFFFFF;
+            --off:         #F6F9FC;
+            --g100:        #F1F5F9;
+            --g200:        #E2E8F0;
+            --g300:        #CBD5E1;
+            --g400:        #94A3B8;
+            --g500:        #64748B;
+            --g600:        #475569;
+            --g700:        #334155;
+            --g900:        #0F172A;
+            --green:       #059669;
+            --r-sm:  8px;
+            --r-md:  14px;
+            --r-lg:  22px;
+            --sh:    0 2px 20px rgba(11,31,58,.09);
+            --shh:   0 10px 40px rgba(11,31,58,.16);
+            --tr:    all .32s cubic-bezier(.4,0,.2,1);
+        }
+        *{margin:0;padding:0;box-sizing:border-box}
+        html{scroll-behavior:smooth}
+        body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--off);color:var(--g700);line-height:1.65;overflow-x:hidden}
+
+        /* ── PROGRESS ── */
+        #progressBar{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--teal),var(--gold));z-index:9999;width:0;transition:width .1s}
+
+        /* ── HEADER ── */
+        header{background:var(--navy);padding:68px 0 56px;position:relative;overflow:hidden;color:var(--white)}
+        header::before{content:'';position:absolute;inset:0;background:
+            radial-gradient(ellipse 90% 70% at 105% -5%, rgba(10,126,164,.38) 0%,transparent 55%),
+            radial-gradient(ellipse 55% 85% at -8% 115%, rgba(240,165,0,.13) 0%,transparent 55%)}
+        header::after{content:'';position:absolute;inset:0;background-image:repeating-linear-gradient(-45deg,transparent,transparent 38px,rgba(255,255,255,.014) 38px,rgba(255,255,255,.014) 39px)}
+        .h-inner{max-width:1100px;margin:0 auto;padding:0 44px;position:relative;z-index:2}
+
+        .relo-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(240,165,0,.17);border:1px solid rgba(240,165,0,.42);color:var(--gold-light);padding:6px 16px;border-radius:30px;font-size:.76rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;margin-bottom:20px;animation:fdDown .7s ease-out .2s both}
+        h1.name{font-family:'DM Serif Display',serif;font-size:clamp(2.3rem,4.5vw,3.6rem);font-weight:400;letter-spacing:-.5px;color:var(--white);line-height:1.1;margin-bottom:12px;animation:fdDown .7s ease-out .35s both}
+        .headline{font-size:clamp(.88rem,1.7vw,1.02rem);color:var(--teal-light);font-weight:500;letter-spacing:.2px;margin-bottom:30px;animation:fdDown .7s ease-out .5s both}
+        .headline span{color:rgba(255,255,255,.4);margin:0 7px}
+        .contact-row{display:flex;flex-wrap:wrap;gap:10px;animation:fdUp .7s ease-out .62s both}
+        .chip{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.11);color:rgba(255,255,255,.87);padding:7px 15px;border-radius:30px;font-size:.85rem;text-decoration:none;transition:var(--tr);backdrop-filter:blur(4px)}
+        .chip:hover{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.22);transform:translateY(-2px);color:var(--white)}
+        .chip i{color:var(--gold-light);font-size:.82rem}
+        .avail{margin-top:22px;display:flex;align-items:center;gap:10px;font-size:.8rem;color:rgba(255,255,255,.5);animation:fdUp .7s ease-out .78s both}
+        .dot-live{width:8px;height:8px;background:#22C55E;border-radius:50%;box-shadow:0 0 0 3px rgba(34,197,94,.25);animation:pulseDot 2s infinite}
+        @keyframes pulseDot{0%,100%{box-shadow:0 0 0 3px rgba(34,197,94,.25)}50%{box-shadow:0 0 0 6px rgba(34,197,94,.07)}}
+        @keyframes fdDown{from{opacity:0;transform:translateY(-18px)}to{opacity:1;transform:translateY(0)}}
+        @keyframes fdUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+
+        /* ── METRICS BAR ── */
+        .metrics-bar{background:var(--navy-mid);border-bottom:1px solid rgba(255,255,255,.07);padding:22px 0}
+        .metrics-inner{max-width:1100px;margin:0 auto;padding:0 44px;display:grid;grid-template-columns:repeat(5,1fr);gap:0;text-align:center}
+        .metric-item{padding:0 12px;border-right:1px solid rgba(255,255,255,.07)}
+        .metric-item:last-child{border-right:none}
+        .metric-num{font-size:1.8rem;font-weight:800;font-family:'DM Serif Display',serif;color:var(--teal-light);line-height:1}
+        .metric-label{font-size:.72rem;color:rgba(255,255,255,.45);margin-top:5px;font-weight:500;letter-spacing:.3px;text-transform:uppercase}
+
+        /* ── NAV ── */
+        .nav{position:sticky;top:0;z-index:100;background:var(--navy-mid);border-bottom:1px solid rgba(255,255,255,.06)}
+        .nav-inner{max-width:1100px;margin:0 auto;padding:0 44px;display:flex;gap:0;overflow-x:auto;scrollbar-width:none}
+        .nav-inner::-webkit-scrollbar{display:none}
+        .ntab{padding:14px 18px;font-size:.79rem;font-weight:600;letter-spacing:.4px;color:rgba(255,255,255,.45);text-decoration:none;text-transform:uppercase;white-space:nowrap;border-bottom:2px solid transparent;transition:var(--tr)}
+        .ntab:hover,.ntab.active{color:var(--teal-light);border-bottom-color:var(--teal)}
+
+        /* ── MAIN ── */
+        main{max-width:1100px;margin:0 auto;padding:52px 44px 90px}
+
+        /* ── SECTION ── */
+        .sec{margin-bottom:64px;opacity:0;transform:translateY(26px);transition:opacity .52s ease,transform .52s ease}
+        .sec.vis{opacity:1;transform:translateY(0)}
+        .sec-hdr{display:flex;align-items:center;gap:13px;margin-bottom:30px}
+        .sec-ico{width:38px;height:38px;background:linear-gradient(135deg,var(--teal),var(--navy-light));border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--white);font-size:.88rem;flex-shrink:0}
+        .sec-title{font-family:'DM Serif Display',serif;font-size:1.5rem;font-weight:400;color:var(--navy);letter-spacing:-.3px}
+        .sec-line{flex:1;height:1px;background:linear-gradient(90deg,var(--g200),transparent)}
+
+        /* ── SUMMARY ── */
+        .summary-box{background:var(--white);border-radius:var(--r-lg);padding:36px 40px;border-left:4px solid var(--teal);box-shadow:var(--sh);font-size:1.0rem;color:var(--g600);line-height:1.82;transition:var(--tr)}
+        .summary-box:hover{box-shadow:var(--shh)}
+        .summary-box strong{color:var(--navy);font-weight:700}
+        .client-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+        .client-chip{background:var(--g100);border:1px solid var(--g200);color:var(--navy);padding:4px 13px;border-radius:20px;font-size:.78rem;font-weight:600}
+
+        /* ── COMPETENCIES ── */
+        .comp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+        .comp-card{background:var(--white);border-radius:var(--r-md);padding:26px 22px;box-shadow:var(--sh);border-top:3px solid var(--teal);transition:var(--tr);position:relative;overflow:hidden}
+        .comp-card:nth-child(2){border-top-color:var(--gold)}
+        .comp-card:nth-child(3){border-top-color:#7C3AED}
+        .comp-card:nth-child(4){border-top-color:var(--green)}
+        .comp-card:nth-child(5){border-top-color:#DC2626}
+        .comp-card:nth-child(6){border-top-color:#0369A1}
+        .comp-card:hover{transform:translateY(-6px);box-shadow:var(--shh)}
+        .comp-cat{font-size:.68rem;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;color:var(--teal);margin-bottom:9px}
+        .comp-card:nth-child(2) .comp-cat{color:var(--gold)}
+        .comp-card:nth-child(3) .comp-cat{color:#7C3AED}
+        .comp-card:nth-child(4) .comp-cat{color:var(--green)}
+        .comp-card:nth-child(5) .comp-cat{color:#DC2626}
+        .comp-card:nth-child(6) .comp-cat{color:#0369A1}
+        .comp-hd{font-size:.97rem;font-weight:700;color:var(--navy);margin-bottom:11px;line-height:1.3}
+        .comp-items{list-style:none;display:flex;flex-direction:column;gap:5px}
+        .comp-items li{font-size:.84rem;color:var(--g500);line-height:1.5;padding-left:14px;position:relative}
+        .comp-items li::before{content:'›';position:absolute;left:0;color:var(--teal);font-weight:700}
+        .comp-card:nth-child(2) .comp-items li::before{color:var(--gold)}
+        .comp-card:nth-child(3) .comp-items li::before{color:#7C3AED}
+        .comp-card:nth-child(4) .comp-items li::before{color:var(--green)}
+        .comp-card:nth-child(5) .comp-items li::before{color:#DC2626}
+        .comp-card:nth-child(6) .comp-items li::before{color:#0369A1}
+
+        /* ── AI PRODUCTS ── */
+        .ai-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+        .ai-card{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-mid) 100%);border-radius:var(--r-lg);padding:28px 28px;color:var(--white);box-shadow:var(--sh);transition:var(--tr);position:relative;overflow:hidden}
+        .ai-card::after{content:'';position:absolute;top:-30px;right:-30px;width:130px;height:130px;background:radial-gradient(circle,rgba(255,255,255,.06) 0%,transparent 70%)}
+        .ai-card:hover{transform:translateY(-6px);box-shadow:var(--shh)}
+        .ai-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(240,165,0,.2);border:1px solid rgba(240,165,0,.4);color:var(--gold-light);padding:3px 12px;border-radius:20px;font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.5px;margin-bottom:14px}
+        .ai-name{font-family:'DM Serif Display',serif;font-size:1.25rem;color:var(--white);margin-bottom:8px}
+        .ai-desc{font-size:.875rem;color:rgba(255,255,255,.65);line-height:1.7;margin-bottom:14px}
+        .ai-tags{display:flex;flex-wrap:wrap;gap:6px}
+        .ai-tag{background:rgba(56,189,248,.12);border:1px solid rgba(56,189,248,.2);color:var(--teal-light);padding:3px 10px;border-radius:12px;font-size:.72rem;font-weight:600}
+
+        /* ── EXPERIENCE ── */
+        .exp-list{display:flex;flex-direction:column;gap:26px}
+        .exp-card{background:var(--white);border-radius:var(--r-lg);box-shadow:var(--sh);overflow:hidden;transition:var(--tr);opacity:0;transform:translateX(-18px)}
+        .exp-card.vis{opacity:1;transform:translateX(0)}
+        .exp-card:hover{box-shadow:var(--shh)}
+        .exp-head{padding:26px 30px 20px;background:linear-gradient(135deg,var(--navy) 0%,var(--navy-mid) 100%);position:relative;overflow:hidden}
+        .exp-head::after{content:'';position:absolute;right:-50px;top:-50px;width:180px;height:180px;background:radial-gradient(circle,rgba(255,255,255,.05) 0%,transparent 70%)}
+        .exp-top{display:flex;justify-content:space-between;align-items:flex-start;gap:18px;flex-wrap:wrap}
+        .exp-role{font-size:1.08rem;font-weight:700;color:var(--white);line-height:1.3}
+        .exp-dates{background:rgba(10,126,164,.32);border:1px solid rgba(56,189,248,.28);color:var(--teal-light);padding:4px 13px;border-radius:20px;font-size:.78rem;font-weight:600;white-space:nowrap;flex-shrink:0}
+        .exp-co-row{display:flex;align-items:center;gap:16px;margin-top:9px;flex-wrap:wrap}
+        .exp-co{font-size:.88rem;font-weight:600;color:var(--teal-light)}
+        .exp-loc{font-size:.8rem;color:rgba(255,255,255,.45);display:flex;align-items:center;gap:5px}
+        .exp-clients{margin-top:9px;font-size:.79rem;color:rgba(255,255,255,.48);font-style:italic}
+        .exp-clients strong{color:var(--gold-light);font-style:normal}
+        .current-tag{display:inline-flex;align-items:center;gap:5px;background:rgba(5,150,105,.22);border:1px solid rgba(5,150,105,.4);color:#6EE7B7;padding:2px 11px;border-radius:20px;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.4px;margin-left:9px}
+        .current-tag::before{content:'';width:5px;height:5px;background:#22C55E;border-radius:50%;animation:pulseDot 2s infinite}
+        .exp-body{padding:24px 30px 28px}
+        .bullet-list{list-style:none;display:flex;flex-direction:column;gap:13px}
+        .bullet-list li{display:flex;gap:13px;font-size:.9rem;color:var(--g600);line-height:1.72;transition:var(--tr)}
+        .bullet-list li:hover{color:var(--g900)}
+        .bdot{width:7px;height:7px;background:var(--teal);border-radius:50%;margin-top:8px;flex-shrink:0}
+        .bdot.gold{background:var(--gold)}
+        .blabel{font-weight:700;color:var(--navy)}
+        .mpill{display:inline-flex;align-items:center;background:linear-gradient(135deg,var(--teal),var(--navy-light));color:var(--white);padding:1px 9px;border-radius:20px;font-size:.75rem;font-weight:700;margin:0 2px}
+
+        /* ── SKILLS ── */
+        .skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+        .sk-card{background:var(--white);border-radius:var(--r-md);padding:20px 22px;box-shadow:var(--sh);transition:var(--tr);display:flex;gap:15px;align-items:flex-start}
+        .sk-card:hover{transform:translateY(-4px);box-shadow:var(--shh)}
+        .sk-ico{width:36px;height:36px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:.84rem;color:var(--white);flex-shrink:0}
+        .ic-teal{background:linear-gradient(135deg,var(--teal),#0369A1)}
+        .ic-navy{background:linear-gradient(135deg,var(--navy-light),var(--navy))}
+        .ic-purple{background:linear-gradient(135deg,#7C3AED,#5B21B6)}
+        .ic-gold{background:linear-gradient(135deg,var(--gold),#D97706)}
+        .ic-green{background:linear-gradient(135deg,#059669,#047857)}
+        .ic-red{background:linear-gradient(135deg,#DC2626,#991B1B)}
+        .ic-slate{background:linear-gradient(135deg,#475569,#334155)}
+        .ic-pink{background:linear-gradient(135deg,#DB2777,#9D174D)}
+        .sk-label{font-size:.69rem;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--teal);margin-bottom:5px}
+        .sk-items{font-size:.86rem;color:var(--g500);line-height:1.75}
+        .sk-items .tag{display:inline-flex;background:var(--g100);border:1px solid var(--g200);color:var(--g700);padding:2px 8px;border-radius:8px;font-size:.75rem;font-weight:600;margin:2px 2px 0 0}
+
+        /* ── EDUCATION ── */
+        .edu-layout{display:grid;grid-template-columns:1fr 2fr;gap:18px;align-items:start}
+        .edu-card{background:linear-gradient(135deg,var(--navy),var(--navy-mid));border-radius:var(--r-lg);padding:32px 28px;color:var(--white);box-shadow:var(--sh)}
+        .edu-big-ico{font-size:2.3rem;color:rgba(255,255,255,.14);margin-bottom:16px}
+        .edu-deg{font-family:'DM Serif Display',serif;font-size:1.18rem;margin-bottom:6px}
+        .edu-inst{font-size:.875rem;color:var(--teal-light)}
+        .cert-col{display:flex;flex-direction:column;gap:11px}
+        .cert{background:var(--white);border-radius:var(--r-md);padding:16px 20px;display:flex;align-items:center;gap:15px;box-shadow:var(--sh);transition:var(--tr);border-left:3px solid var(--teal)}
+        .cert:nth-child(2){border-left-color:var(--gold)}
+        .cert:nth-child(3){border-left-color:#7C3AED}
+        .cert:nth-child(4){border-left-color:var(--green)}
+        .cert:hover{transform:translateX(6px);box-shadow:var(--shh)}
+        .cert-ico{width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:.95rem;flex-shrink:0}
+        .cert-name{font-size:.88rem;font-weight:700;color:var(--navy);line-height:1.3}
+        .cert-by{font-size:.78rem;color:var(--g400);margin-top:2px}
+
+        /* ── AWARDS ── */
+        .awards-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+        .aw-card{background:var(--white);border-radius:var(--r-md);padding:22px 20px;box-shadow:var(--sh);transition:var(--tr);position:relative;overflow:hidden;border-top:3px solid var(--gold)}
+        .aw-card:hover{transform:translateY(-6px);box-shadow:var(--shh)}
+        .aw-card::after{content:'★';position:absolute;right:8px;bottom:3px;font-size:3.2rem;color:rgba(240,165,0,.07);line-height:1}
+        .aw-yr{font-size:.69rem;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+        .aw-title{font-size:.9rem;font-weight:700;color:var(--navy);margin-bottom:5px;line-height:1.3}
+        .aw-org{font-size:.79rem;color:var(--g500)}
+
+        /* ── FOOTER ── */
+        footer{background:var(--navy);color:rgba(255,255,255,.5);text-align:center;padding:38px 20px;font-size:.875rem}
+        footer strong{color:rgba(255,255,255,.8)}
+        .ft-links{display:flex;justify-content:center;gap:26px;margin-top:16px}
+        .ft-links a{color:rgba(255,255,255,.42);text-decoration:none;display:flex;align-items:center;gap:7px;font-size:.81rem;font-weight:500;transition:var(--tr)}
+        .ft-links a:hover{color:var(--teal-light)}
+
+        /* ── RESPONSIVE ── */
+        @media(max-width:900px){
+            .comp-grid,.awards-grid{grid-template-columns:repeat(2,1fr)}
+            .edu-layout{grid-template-columns:1fr}
+            .metrics-inner{grid-template-columns:repeat(3,1fr);gap:12px}
+            .ai-grid{grid-template-columns:1fr}
+        }
+        @media(max-width:660px){
+            .h-inner,.nav-inner,.metrics-inner,main{padding-left:18px;padding-right:18px}
+            h1.name{font-size:1.95rem}
+            .comp-grid,.skills-grid,.awards-grid{grid-template-columns:1fr}
+            .metrics-inner{grid-template-columns:repeat(2,1fr)}
+            .exp-head,.exp-body{padding:18px 18px}
+        }
+        @media print{
+            #progressBar,.nav{display:none}
+            .sec,.exp-card{opacity:1!important;transform:none!important}
         }
     </style>
 </head>
 <body>
 
-<div class="progress-bar" id="progressBar"></div>
+<div id="progressBar"></div>
 
-<!-- ═══════════════════════════════════════════════════════════════════════
-     HEADER
-═══════════════════════════════════════════════════════════════════════ -->
+<!-- ═══ HEADER ═══════════════════════════════════════════════════════ -->
 <header>
-    <div class="header-inner">
-        <div class="relocation-badge">
-            <i class="fas fa-plane-departure"></i>
-            Relocating to Pune, India — April 2026 &nbsp;|&nbsp; Immediate Joiner
-        </div>
-
+    <div class="h-inner">
+        <div class="relo-badge"><i class="fas fa-plane-departure"></i> Relocating to Pune, India — April 2026 &nbsp;|&nbsp; Immediate Joiner</div>
         <h1 class="name">Shivkumar Patil</h1>
-
         <p class="headline">
-            Technical Delivery Manager
-            <span>|</span>
-            Principal QA Architect
-            <span>|</span>
-            17+ Years Global Experience
-            <span>|</span>
-            BFSI &amp; FinTech
-            <span>|</span>
-            AI / GenAI
-            <span>|</span>
+            Technical Delivery Manager<span>|</span>
+            Principal QA Architect<span>|</span>
+            SDET Lead<span>|</span>
+            DevOps<span>|</span>
+            17+ Years BFSI<span>|</span>
+            AI/GenAI<span>|</span>
             CSM
         </p>
-
         <div class="contact-row">
-            <span class="contact-chip">
-                <i class="fas fa-map-marker-alt"></i> Pune, India (from April 2026)
-            </span>
-            <a href="tel:+13134014814" class="contact-chip">
-                <i class="fab fa-whatsapp"></i> +1 313-401-4814
-            </a>
-            <a href="mailto:smpshiva@gmail.com" class="contact-chip">
-                <i class="fas fa-envelope"></i> smpshiva@gmail.com
-            </a>
-            <a href="https://www.linkedin.com/in/shivkumarpatil/" target="_blank" class="contact-chip">
-                <i class="fab fa-linkedin"></i> linkedin.com/in/shivkumarpatil
-            </a>
-            <a href="https://qualion.ai" target="_blank" class="contact-chip">
-                <i class="fas fa-globe"></i> qualion.ai
-            </a>
+            <span class="chip"><i class="fas fa-map-marker-alt"></i>Pune, India (from Apr 2026)</span>
+            <a href="tel:+13134014814" class="chip"><i class="fab fa-whatsapp"></i>+1 313-401-4814</a>
+            <a href="mailto:smpshiva@gmail.com" class="chip"><i class="fas fa-envelope"></i>smpshiva@gmail.com</a>
+            <a href="https://www.linkedin.com/in/shivkumarpatil/" target="_blank" class="chip"><i class="fab fa-linkedin"></i>linkedin.com/in/shivkumarpatil</a>
+            <a href="https://qualion.ai" target="_blank" class="chip"><i class="fas fa-globe"></i>qualion.ai</a>
         </div>
-
-        <div class="avail-note">
-            <div class="avail-dot"></div>
-            Available from April 2026 &nbsp;·&nbsp; Open to Full-Time, Contract &amp; Consulting roles in Pune &amp; Remote
+        <div class="avail">
+            <div class="dot-live"></div>
+            Available from April 2026 &nbsp;·&nbsp; Open to Full-Time, Contract &amp; Consulting roles in Pune / Remote BFSI
         </div>
     </div>
 </header>
 
-<!-- ═══════════════════════════════════════════════════════════════════════
-     NAV TABS
-═══════════════════════════════════════════════════════════════════════ -->
-<nav class="nav-tabs" aria-label="Page sections">
-    <div class="nav-tabs-inner">
-        <a class="nav-tab active" href="#summary">Summary</a>
-        <a class="nav-tab" href="#competencies">Competencies</a>
-        <a class="nav-tab" href="#experience">Experience</a>
-        <a class="nav-tab" href="#skills">Skills</a>
-        <a class="nav-tab" href="#education">Education</a>
-        <a class="nav-tab" href="#awards">Awards</a>
+<!-- ═══ METRICS BAR ══════════════════════════════════════════════════ -->
+<div class="metrics-bar">
+    <div class="metrics-inner">
+        <div class="metric-item"><div class="metric-num">17+</div><div class="metric-label">Years Experience</div></div>
+        <div class="metric-item"><div class="metric-num">11+</div><div class="metric-label">Enterprise Programs</div></div>
+        <div class="metric-item"><div class="metric-num">85%+</div><div class="metric-label">Automation Coverage</div></div>
+        <div class="metric-item"><div class="metric-num">20+</div><div class="metric-label">Global Team Size</div></div>
+        <div class="metric-item"><div class="metric-num">60%</div><div class="metric-label">↓ Test Creation Time</div></div>
+    </div>
+</div>
+
+<!-- ═══ NAV ══════════════════════════════════════════════════════════ -->
+<nav class="nav">
+    <div class="nav-inner">
+        <a class="ntab active" href="#summary">Summary</a>
+        <a class="ntab" href="#competencies">Competencies</a>
+        <a class="ntab" href="#ai-products">AI Products</a>
+        <a class="ntab" href="#experience">Experience</a>
+        <a class="ntab" href="#skills">Skills</a>
+        <a class="ntab" href="#education">Education</a>
+        <a class="ntab" href="#awards">Awards</a>
     </div>
 </nav>
 
-<!-- ═══════════════════════════════════════════════════════════════════════
-     MAIN CONTENT
-═══════════════════════════════════════════════════════════════════════ -->
+<!-- ═══ MAIN ══════════════════════════════════════════════════════════ -->
 <main>
 
-    <!-- ── PROFESSIONAL SUMMARY ─────────────────────────────────────── -->
-    <section class="section" id="summary">
-        <div class="section-header">
-            <div class="section-icon"><i class="fas fa-user-tie"></i></div>
-            <h2 class="section-title">Professional Summary</h2>
-            <div class="section-line"></div>
+<!-- ── SUMMARY ─────────────────────────────────────────────────────── -->
+<section class="sec" id="summary">
+    <div class="sec-hdr">
+        <div class="sec-ico"><i class="fas fa-user-tie"></i></div>
+        <h2 class="sec-title">Professional Summary</h2>
+        <div class="sec-line"></div>
+    </div>
+    <div class="summary-box">
+        <p><strong>Technical Delivery Manager &amp; Principal QA Architect</strong> with <strong>17+ years of global experience, including 13 years based in the USA</strong>, delivering end-to-end enterprise programs for Tier-1 Banking &amp; Financial Services clients. Hands-on leader of global cross-functional teams of <strong>20+</strong> across <strong>11+ large-scale modernization initiatives</strong>. Led full-cycle delivery — from requirements through production release — owning <strong>QA transformation, DevOps adoption, CI/CD pipeline architecture, and program governance</strong>. Expert in stakeholder management from C-suite to engineering teams, vendor governance, and Agile/SAFe transformation. Strong technical foundation enables bridging business objectives and engineering execution, <strong>reducing release cycles by 60%+ while ensuring regulatory compliance</strong>.</p>
+        <p style="margin-top:14px">Delivered mission-critical programs for <strong>Citizens Bank, Zelle (Early Warning Services), Truist Bank, PNC Bank, First Republic Bank, Advisor Group, and AIG VALIC</strong> at Persistent Systems and Mphasis. <strong>Pioneered GenAI-assisted QA</strong> in regulated environments — cutting test creation time by 60% and improving defect detection by 25%. Currently building AI-powered SaaS platforms at Qualion AI LLC. CSM Certified.</p>
+        <div class="client-chips">
+            <span class="client-chip">Citizens Bank</span>
+            <span class="client-chip">Zelle / Early Warning Services</span>
+            <span class="client-chip">Truist Bank</span>
+            <span class="client-chip">PNC Bank</span>
+            <span class="client-chip">First Republic Bank</span>
+            <span class="client-chip">Advisor Group</span>
+            <span class="client-chip">AIG VALIC</span>
+            <span class="client-chip">Baldwin Group</span>
+            <span class="client-chip">General Motors / OnStar</span>
+            <span class="client-chip">HP</span>
+            <span class="client-chip">Symantec Corporation</span>
         </div>
-        <div class="summary-block">
-            <p>Technical <strong>Delivery Manager &amp; Principal QA Architect</strong> with <strong>17+ years of global experience, including 13 years based in the USA</strong>, delivering end-to-end enterprise programs for Tier-1 Banking &amp; Financial Services clients. Led full-cycle delivery — from requirements through production release — owning <strong>QA transformation, DevOps adoption, CI/CD pipelines, and program governance</strong>. Delivered mission-critical programs for <strong>Citizens Bank, Zelle (Early Warning Services), Truist Bank, PNC Bank, First Republic Bank, Advisor Group, and AIG VALIC</strong> at Persistent Systems and Mphasis. Managed cross-functional global teams of <strong>20+</strong> across US, India, and Europe. Currently building AI-powered SaaS platforms at Qualion AI LLC and leveraging GenAI to define the next generation of QA and DevOps solutions. CSM Certified.</p>
+    </div>
+</section>
+
+<!-- ── CORE COMPETENCIES ────────────────────────────────────────────── -->
+<section class="sec" id="competencies">
+    <div class="sec-hdr">
+        <div class="sec-ico"><i class="fas fa-th-large"></i></div>
+        <h2 class="sec-title">Core Competencies</h2>
+        <div class="sec-line"></div>
+    </div>
+    <div class="comp-grid">
+        <div class="comp-card">
+            <div class="comp-cat">Program &amp; Delivery</div>
+            <div class="comp-hd">Leadership &amp; Governance</div>
+            <ul class="comp-items">
+                <li>End-to-End Technical Delivery Management</li>
+                <li>Agile / SAFe / Scrum Transformation</li>
+                <li>Release Orchestration &amp; Planning</li>
+                <li>Resource Capacity Planning</li>
+                <li>Vendor Governance &amp; SLA/KPI Management</li>
+                <li>Risk &amp; Mitigation Strategies</li>
+                <li>Change Management (CAB)</li>
+                <li>$10M+ Annual Budget Management</li>
+            </ul>
         </div>
-    </section>
-
-    <!-- ── CORE COMPETENCIES ─────────────────────────────────────────── -->
-    <section class="section" id="competencies">
-        <div class="section-header">
-            <div class="section-icon"><i class="fas fa-th-large"></i></div>
-            <h2 class="section-title">Core Competencies</h2>
-            <div class="section-line"></div>
+        <div class="comp-card">
+            <div class="comp-cat">Strategic Delivery</div>
+            <div class="comp-hd">Stakeholder &amp; Executive Management</div>
+            <ul class="comp-items">
+                <li>C-Suite Stakeholder Management</li>
+                <li>Executive Reporting &amp; Dashboarding</li>
+                <li>ROI Analysis &amp; Technology Evaluation</li>
+                <li>Digital &amp; DevOps Transformation</li>
+                <li>Technical Documentation &amp; Standards</li>
+                <li>Client Presentations &amp; QBRs</li>
+                <li>Training, Mentoring &amp; Team Development</li>
+                <li>Cross-functional Collaboration</li>
+            </ul>
         </div>
-        <div class="competency-grid">
-            <div class="comp-card">
-                <div class="comp-label">Program &amp; Delivery</div>
-                <div class="comp-title">Leadership &amp; Governance</div>
-                <div class="comp-text">End-to-End Technical Delivery, Agile/SAFe Transformation, Release Orchestration, C-Suite Stakeholder Management, Vendor Governance, Risk &amp; Mitigation, Executive Reporting, ROI Analysis, Change Management (CAB)</div>
-            </div>
-            <div class="comp-card">
-                <div class="comp-label">Quality Engineering</div>
-                <div class="comp-title">Architecture &amp; Automation</div>
-                <div class="comp-text">QA Architecture, Enterprise Test Automation, CI/CD Pipeline Design, GenAI-Assisted Testing, Performance &amp; Security Testing, TCOE Establishment, Test Data Management, Shift-Left Testing</div>
-            </div>
-            <div class="comp-card">
-                <div class="comp-label">Banking Domain</div>
-                <div class="comp-title">BFSI Expertise</div>
-                <div class="comp-text">Core Banking (FIS IBS), Payment Processing (IBM FTM, ACH/Wire, Zelle), Deposits, Loans, Commercial &amp; Retail Banking, Post-Merger Integration, SOX/PCI-DSS Compliance, Regulatory Test Governance</div>
+        <div class="comp-card">
+            <div class="comp-cat">Technical Architecture</div>
+            <div class="comp-hd">QA &amp; DevOps Design</div>
+            <ul class="comp-items">
+                <li>QA Architecture &amp; TCOE Establishment</li>
+                <li>Enterprise Test Automation Framework Design</li>
+                <li>CI/CD Pipeline Architecture (GitLab, Jenkins)</li>
+                <li>GenAI Implementation &amp; Governance</li>
+                <li>Performance &amp; Security Testing Strategy</li>
+                <li>Tooling Evaluation &amp; Selection</li>
+                <li>Root Cause Analysis &amp; Process Optimization</li>
+                <li>Test Data Management &amp; Environment Strategy</li>
+            </ul>
+        </div>
+        <div class="comp-card">
+            <div class="comp-cat">Quality Engineering</div>
+            <div class="comp-hd">Testing Lifecycle &amp; Automation</div>
+            <ul class="comp-items">
+                <li>Shift-Left Testing Strategy</li>
+                <li>End-to-End SDLC / STLC Management</li>
+                <li>Test Planning, Execution &amp; Governance</li>
+                <li>Defect Lifecycle Management &amp; Triage</li>
+                <li>GenAI-Assisted Test Generation</li>
+                <li>API, Performance &amp; Security Testing</li>
+                <li>Contract &amp; Schema Validation Testing</li>
+                <li>Mobile &amp; Web Automation (Appium, Playwright)</li>
+            </ul>
+        </div>
+        <div class="comp-card">
+            <div class="comp-cat">Banking Domain (BFSI)</div>
+            <div class="comp-hd">Financial Services Expertise</div>
+            <ul class="comp-items">
+                <li>Core Banking Systems — FIS IBS</li>
+                <li>Payment Processing — IBM FTM, ACH/Wire, Zelle</li>
+                <li>Deposits, Loans, Commercial &amp; Retail Banking</li>
+                <li>Post-Merger Integration &amp; System Consolidation</li>
+                <li>SOX &amp; PCI-DSS Compliance Governance</li>
+                <li>Regulatory Test Governance &amp; Audit Readiness</li>
+                <li>Financial Data Migration &amp; ETL Validation</li>
+                <li>Insurance Operations (AIG VALIC, Baldwin Group)</li>
+            </ul>
+        </div>
+        <div class="comp-card">
+            <div class="comp-cat">GenAI &amp; Innovation</div>
+            <div class="comp-hd">AI-Powered QA &amp; DevOps</div>
+            <ul class="comp-items">
+                <li>GenAI-Assisted Test Design &amp; Code Generation</li>
+                <li>Agentic AI — Synthetic Test Data Generation</li>
+                <li>Prompt Engineering for QA Automation</li>
+                <li>GitHub Copilot &amp; Claude Code Integration</li>
+                <li>LLM Integration in Regulated Environments</li>
+                <li>AI-Powered IaC Automation (TerraGen AI)</li>
+                <li>Compliance-Aware AI Governance</li>
+                <li>SaaS Product Development (Qualion AI LLC)</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ── AI PRODUCTS ──────────────────────────────────────────────────── -->
+<section class="sec" id="ai-products">
+    <div class="sec-hdr">
+        <div class="sec-ico"><i class="fas fa-robot"></i></div>
+        <h2 class="sec-title">AI Products &amp; Innovation (Qualion AI LLC)</h2>
+        <div class="sec-line"></div>
+    </div>
+    <div class="ai-grid">
+        <div class="ai-card">
+            <div class="ai-badge"><i class="fas fa-shield-alt"></i> Banking Compliance</div>
+            <div class="ai-name">TestPilot AI</div>
+            <div class="ai-desc">AI-driven banking compliance testing platform with <strong style="color:var(--gold-light)">194+ regulatory templates</strong>. Leverages GenAI and Playwright for intelligent automated test generation. Designed for BFSI enterprises requiring SOX/PCI-DSS compliance coverage out-of-the-box.</div>
+            <div class="ai-tags">
+                <span class="ai-tag">GenAI</span><span class="ai-tag">Playwright</span><span class="ai-tag">194+ Templates</span><span class="ai-tag">Banking Compliance</span><span class="ai-tag">SOX/PCI-DSS</span>
             </div>
         </div>
-    </section>
+        <div class="ai-card">
+            <div class="ai-badge"><i class="fas fa-layer-group"></i> Test Framework</div>
+            <div class="ai-name">AutomateX</div>
+            <div class="ai-desc">Enterprise-grade Playwright test framework for BFSI clients. Provides reusable architecture with CI/CD integration, multi-browser parallel execution, and structured test data management — built for scale across Web, API, and Mobile platforms.</div>
+            <div class="ai-tags">
+                <span class="ai-tag">Playwright</span><span class="ai-tag">Multi-Browser</span><span class="ai-tag">CI/CD Ready</span><span class="ai-tag">Parallel Execution</span><span class="ai-tag">BFSI</span>
+            </div>
+        </div>
+        <div class="ai-card">
+            <div class="ai-badge"><i class="fas fa-server"></i> IaC Automation</div>
+            <div class="ai-name">TerraGen AI</div>
+            <div class="ai-desc">AI-powered Infrastructure-as-Code automation platform. Leverages LLMs to generate, validate, and optimize Terraform configurations, accelerating cloud infrastructure provisioning for enterprise DevOps pipelines.</div>
+            <div class="ai-tags">
+                <span class="ai-tag">Terraform</span><span class="ai-tag">IaC</span><span class="ai-tag">LLM</span><span class="ai-tag">Cloud Automation</span><span class="ai-tag">DevOps</span>
+            </div>
+        </div>
+        <div class="ai-card">
+            <div class="ai-badge"><i class="fas fa-database"></i> Agentic AI</div>
+            <div class="ai-name">Synthetic Test Data Generator</div>
+            <div class="ai-desc">Agentic AI system for generating realistic, compliant synthetic test data for financial services applications. Eliminates PII exposure risk in test environments while maintaining referential integrity across complex banking data models.</div>
+            <div class="ai-tags">
+                <span class="ai-tag">Agentic AI</span><span class="ai-tag">Synthetic Data</span><span class="ai-tag">PII Safe</span><span class="ai-tag">BFSI</span><span class="ai-tag">Compliance</span>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <!-- ── PROFESSIONAL EXPERIENCE ───────────────────────────────────── -->
-    <section class="section" id="experience">
-        <div class="section-header">
-            <div class="section-icon"><i class="fas fa-briefcase"></i></div>
-            <h2 class="section-title">Professional Experience</h2>
-            <div class="section-line"></div>
+<!-- ── PROFESSIONAL EXPERIENCE ─────────────────────────────────────── -->
+<section class="sec" id="experience">
+    <div class="sec-hdr">
+        <div class="sec-ico"><i class="fas fa-briefcase"></i></div>
+        <h2 class="sec-title">Professional Experience</h2>
+        <div class="sec-line"></div>
+    </div>
+    <div class="exp-list">
+
+        <!-- QUALION -->
+        <div class="exp-card">
+            <div class="exp-head">
+                <div class="exp-top">
+                    <div class="exp-role">Founder &amp; Principal QA Consultant<span class="current-tag">Current</span></div>
+                    <div class="exp-dates">Oct 2025 – Present</div>
+                </div>
+                <div class="exp-co-row">
+                    <div class="exp-co"><i class="fas fa-rocket" style="margin-right:6px;opacity:.7"></i>Qualion AI LLC &nbsp;·&nbsp; qualion.ai</div>
+                    <div class="exp-loc"><i class="fas fa-map-marker-alt"></i>Phoenix, AZ → Pune, India (April 2026)</div>
+                </div>
+            </div>
+            <div class="exp-body">
+                <ul class="bullet-list">
+                    <li><div class="bdot gold"></div><div><span class="blabel">TestPilot AI Platform: </span>Built AI-driven banking compliance testing platform with <span class="mpill">194+ Regulatory Templates</span> using GenAI and Playwright; covers SOX, PCI-DSS, and FFIEC compliance scenarios with intelligent test generation targeting BFSI enterprises.</div></li>
+                    <li><div class="bdot gold"></div><div><span class="blabel">AutomateX Framework: </span>Engineered enterprise-grade Playwright test framework for BFSI clients — reusable architecture with CI/CD integration, multi-browser parallel execution, structured test data management, and modular Page Object Model design.</div></li>
+                    <li><div class="bdot gold"></div><div><span class="blabel">TerraGen AI &amp; Synthetic Data: </span>Developed AI-powered IaC automation platform using LLMs to generate and validate Terraform configurations; built Agentic AI system for PII-safe synthetic test data generation for financial data models.</div></li>
+                    <li><div class="bdot gold"></div><div><span class="blabel">QA Consulting Practice: </span>Providing QA architecture advisory and AI-assisted testing strategy for financial services organizations — guiding shift-left adoption, DevOps pipeline optimization, and GenAI governance in regulated environments.</div></li>
+                </ul>
+            </div>
         </div>
 
-        <div class="exp-timeline">
-
-            <!-- QUALION AI LLC -->
-            <div class="exp-card">
-                <div class="exp-card-header">
-                    <div class="exp-title-row">
-                        <div class="exp-role">
-                            Founder &amp; Principal QA Consultant
-                            <span class="current-badge">Current</span>
-                        </div>
-                        <div class="exp-dates">Oct 2025 – Present</div>
-                    </div>
-                    <div class="exp-company-row">
-                        <div class="exp-company"><i class="fas fa-rocket" style="margin-right:6px;opacity:0.7"></i>Qualion AI LLC &nbsp;·&nbsp; qualion.ai</div>
-                        <div class="exp-location"><i class="fas fa-map-marker-alt"></i> Phoenix, AZ → Pune, India (April 2026)</div>
-                    </div>
+        <!-- PERSISTENT -->
+        <div class="exp-card">
+            <div class="exp-head">
+                <div class="exp-top">
+                    <div class="exp-role">Senior Technical Project Manager / QA-DevOps Leader</div>
+                    <div class="exp-dates">Aug 2022 – Oct 2025</div>
                 </div>
-                <div class="exp-card-body">
-                    <ul class="exp-bullets">
-                        <li>
-                            <div class="bullet-dot" style="background:var(--gold)"></div>
-                            <div><span class="bullet-label">TestPilot AI Platform: </span>Built AI-driven banking compliance testing platform with <span class="metric-pill">194+ Regulatory Templates</span> using GenAI and Playwright for intelligent automated test generation, targeting BFSI enterprises.</div>
-                        </li>
-                        <li>
-                            <div class="bullet-dot" style="background:var(--gold)"></div>
-                            <div><span class="bullet-label">AutomateX Framework: </span>Engineered enterprise-grade Playwright test framework for BFSI clients, providing reusable architecture with CI/CD integration and multi-browser parallel execution.</div>
-                        </li>
-                        <li>
-                            <div class="bullet-dot" style="background:var(--gold)"></div>
-                            <div><span class="bullet-label">QA Consulting: </span>Delivering QA architecture advisory and AI-assisted testing strategy for financial services organizations, guiding shift-left adoption and DevOps pipeline optimization for enterprise clients.</div>
-                        </li>
-                    </ul>
+                <div class="exp-co-row">
+                    <div class="exp-co"><i class="fas fa-building" style="margin-right:6px;opacity:.7"></i>Persistent Systems</div>
+                    <div class="exp-loc"><i class="fas fa-map-marker-alt"></i>Phoenix, AZ, USA</div>
                 </div>
+                <div class="exp-clients"><strong>Clients:</strong> Citizens Bank &nbsp;·&nbsp; Truist Bank &nbsp;·&nbsp; Zelle (Early Warning Services) &nbsp;·&nbsp; PNC Bank &nbsp;·&nbsp; Baldwin Group</div>
             </div>
-
-            <!-- PERSISTENT SYSTEMS -->
-            <div class="exp-card">
-                <div class="exp-card-header">
-                    <div class="exp-title-row">
-                        <div class="exp-role">Senior Technical Project Manager / QA-DevOps Leader</div>
-                        <div class="exp-dates">Aug 2022 – Oct 2025</div>
-                    </div>
-                    <div class="exp-company-row">
-                        <div class="exp-company"><i class="fas fa-building" style="margin-right:6px;opacity:0.7"></i>Persistent Systems</div>
-                        <div class="exp-location"><i class="fas fa-map-marker-alt"></i> Phoenix, AZ, USA</div>
-                    </div>
-                    <div class="exp-clients"><strong>Clients:</strong> Citizens Bank · Baldwin Group · Truist Bank · Zelle (Early Warning Services) · PNC Bank</div>
-                </div>
-                <div class="exp-card-body">
-                    <ul class="exp-bullets">
-                        <li>
-                            <div class="bullet-dot"></div>
-                            <div><span class="bullet-label">End-to-End Delivery: </span>Led full-cycle technical delivery across <span class="metric-pill">11+ Programs</span> of banking modernization from requirements to production; partnered with C-suite to align QA/DevOps roadmaps with business objectives; ensured <span class="metric-pill">100% SOX/PCI-DSS</span> compliance across all programs.</div>
-                        </li>
-                        <li>
-                            <div class="bullet-dot"></div>
-                            <div><span class="bullet-label">CI/CD &amp; DevOps Architecture: </span>Designed 3 production-grade CI/CD pipelines for IBM FTM modernization (3.x to 4.x) using GitLab CI/CD, Docker, OpenShift, HashiCorp Vault, and JFrog Artifactory; reduced deployment time from <span class="metric-pill">4 hrs → 45 min</span>.</div>
-                        </li>
-                        <li>
-                            <div class="bullet-dot"></div>
-                            <div><span class="bullet-label">GenAI Innovation: </span>Pioneered GenAI-assisted QA for Tier-1 banking clients; integrated GitHub Copilot and internal LLMs into testing lifecycle, achieving <span class="metric-pill">60% ↓ Test Creation Time</span> and <span class="metric-pill">25% ↑ Defect Detection</span> within regulated compliance environments.</div>
-                        </li>
-                        <li>
-                            <div class="bullet-dot"></div>
-                            <div><span class="bullet-label">QA Architecture: </span>Architected hybrid automation framework (Playwright, Selenium, Appium, AccelQ) achieving <span class="metric-pill">85%+ Coverage</span> across Web, API, and Mobile; reduced regression cycles from <span class="metric-pill">5 days → 8 hours</span> via parallel execution and optimized test data management.</div>
-                        </li>
-                        <li>
-                            <div class="bullet-dot"></div>
-                            <div><span class="bullet-label">Program Leadership: </span>Directed 5 Agile squads (20+ engineers) as Scrum Master; improved sprint velocity <span class="metric-pill">30%</span>; established QA Center of Excellence with SOPs and reusable templates, reducing project setup time by <span class="metric-pill">40%</span>.</div>
-                        </li>
-                    </ul>
-                </div>
+            <div class="exp-body">
+                <ul class="bullet-list">
+                    <li><div class="bdot"></div><div><span class="blabel">End-to-End Program Delivery: </span>Led full-cycle technical delivery across <span class="mpill">11+ Programs</span> of banking modernization — from requirements through production release; partnered with C-suite to align QA/DevOps roadmaps with business objectives; ensured <span class="mpill">100% SOX/PCI-DSS</span> compliance across all programs. Managed <span class="mpill">$10M+ Annual Budget</span>.</div></li>
+                    <li><div class="bdot"></div><div><span class="blabel">CI/CD &amp; DevOps Architecture: </span>Architected and delivered <span class="mpill">3 Production CI/CD Pipelines</span> for IBM FTM modernization (3.x to 4.x) using GitLab CI/CD, Docker, OpenShift, HashiCorp Vault, JFrog Artifactory, and quality gates (SonarQube, Veracode); reduced deployment time from <span class="mpill">4 hrs → 45 min</span> (85% reduction).</div></li>
+                    <li><div class="bdot"></div><div><span class="blabel">Integrated QA Ecosystem: </span>Architected end-to-end quality testing ecosystem spanning requirement management (Jira/Confluence/Xray), test automation (Playwright, AccelQ, Selenium, Appium, Postman, PyTest/Jest), CI/CD pipelines (GitHub Actions), performance testing (JMeter), and monitoring (Datadog/Splunk).</div></li>
+                    <li><div class="bdot"></div><div><span class="blabel">GenAI Innovation: </span>Pioneered GenAI-assisted QA for Tier-1 banking clients; integrated GitHub Copilot and internal LLMs into testing lifecycle, achieving <span class="mpill">60% ↓ Test Creation</span> and <span class="mpill">25% ↑ Defect Detection</span> within regulated compliance environments while maintaining change control compliance.</div></li>
+                    <li><div class="bdot"></div><div><span class="blabel">Enterprise QA Architecture: </span>Built and scaled hybrid automation framework (Playwright, Selenium, Appium, AccelQ) achieving <span class="mpill">85%+ Coverage</span> across Web, API, and Mobile; developed <span class="mpill">500+ Test Scripts</span>; reduced regression cycles from <span class="mpill">5 days → 8 hours</span> through parallel execution and optimized test data management. Reduced flaky tests from <span class="mpill">15% → &lt;2%</span>.</div></li>
+                    <li><div class="bdot"></div><div><span class="blabel">Program Leadership &amp; Agile: </span>Directed 5 Agile squads (20+ QA/DevOps engineers) as Scrum Master &amp; Jira Administrator; improved sprint velocity <span class="mpill">30%</span> through process optimization; established QA Center of Excellence with SOPs and reusable templates reducing project setup time by <span class="mpill">40%</span>.</div></li>
+                    <li><div class="bdot"></div><div><span class="blabel">Knowledge Management: </span>Created comprehensive QA/DevOps knowledge base covering tool evaluation frameworks, environment setup, CI/CD implementation guidelines, technology selection criteria, and testing best practices — ensuring consistency across all banking programs.</div></li>
+                </ul>
             </div>
-
-            <!-- MPHASIS USA -->
-            <div class="exp-card">
-                <div class="exp-card-header">
-                    <div class="exp-title-row">
-                        <div class="exp-role">Delivery Module Lead / Senior Test Lead</div>
-                        <div class="exp-dates">Apr 2013 – Aug 2022</div>
-                    </div>
-                    <div class="exp-company-row">
-                        <div class="exp-company"><i class="fas fa-building" style="margin-right:6px;opacity:0.7"></i>Mphasis Corporation</div>
-                        <div class="exp-location"><i class="fas fa-map-marker-alt"></i> San Francisco, CA, USA</div>
-                    </div>
-                    <div class="exp-clients"><strong>Clients:</strong> First Republic Bank · Advisor Group · AIG VALIC · General Motors</div>
-                </div>
-                <div class="exp-card-body">
-                    <ul class="exp-bullets">
-                        <li>
-                            <div class="bullet-dot"></div>
-                            <div><span class="bullet-label">Banking Program Delivery: </span>Led Core Banking QA modernization for First Republic Bank managing teams of 5–20 engineers across 12+ mission-critical systems (FIS IBS); achieved <span class="metric-pill">#1 Defect Management</span> ranking with <span class="metric-pill">40% ↓ Production Defects</span>.</div>
-                        </li>
-                        <li>
-                            <div class="bullet-dot"></div>
-                            <div><span class="bullet-label">TCOE &amp; Governance: </span>Established Testing Center of Excellence for $10M+ banking platforms; defined enterprise testing standards, quality gates, and SOX/PCI-DSS compliance frameworks; reduced release cycles by <span class="metric-pill">50%</span>.</div>
-                        </li>
-                        <li>
-                            <div class="bullet-dot"></div>
-                            <div><span class="bullet-label">Automation &amp; DevOps: </span>Built Java/Selenium automation ecosystem (TestNG, Cucumber, Rest-Assured, Appium) improving coverage from <span class="metric-pill">45% → 85%</span>; developed 300+ API test scripts; integrated JMeter performance testing into Jenkins CI/CD pipelines.</div>
-                        </li>
-                        <li>
-                            <div class="bullet-dot"></div>
-                            <div><span class="bullet-label">Payment &amp; Cloud Testing: </span>Led testing for payment platforms (ACH/Wire, IBM FTM, Zelle); orchestrated cloud migration testing for wealth management platforms; ensured data integrity across financial migrations and post-merger system consolidations.</div>
-                        </li>
-                        <li>
-                            <div class="bullet-dot"></div>
-                            <div><span class="bullet-label">Governance &amp; Release Management: </span>Managed end-to-end SDLC/STLC for AIG VALIC and Advisor Group platforms; oversaw test planning, environment coordination, defect triage, and release sign-off; drove Waterfall-to-Agile transformation across portfolio.</div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- MPHASIS PUNE -->
-            <div class="exp-card">
-                <div class="exp-card-header">
-                    <div class="exp-title-row">
-                        <div class="exp-role">Test Execution Lead / Senior Test Engineer</div>
-                        <div class="exp-dates">Apr 2009 – Apr 2013</div>
-                    </div>
-                    <div class="exp-company-row">
-                        <div class="exp-company"><i class="fas fa-building" style="margin-right:6px;opacity:0.7"></i>Mphasis Limited</div>
-                        <div class="exp-location"><i class="fas fa-map-marker-alt"></i> Pune, India</div>
-                    </div>
-                    <div class="exp-clients"><strong>Clients:</strong> HP · Symantec Corporation</div>
-                </div>
-                <div class="exp-card-body">
-                    <ul class="exp-bullets">
-                        <li>
-                            <div class="bullet-dot"></div>
-                            <div><span class="bullet-label">Automation &amp; Strategy: </span>Developed and executed <span class="metric-pill">200+ Test Scenarios</span> for enterprise-scale business applications; led test automation strategies for functional and API testing using HP ALM.</div>
-                        </li>
-                        <li>
-                            <div class="bullet-dot"></div>
-                            <div><span class="bullet-label">Defect Management: </span>Collaborated with development teams on requirements analysis, migration testing, and system integration validation; maintained <span class="metric-pill">95% Defect Resolution Rate</span> through rigorous quality gating and triage.</div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- OAK SYSTEMS -->
-            <div class="exp-card">
-                <div class="exp-card-header">
-                    <div class="exp-title-row">
-                        <div class="exp-role">Senior Software Test Engineer</div>
-                        <div class="exp-dates">Mar 2008 – Apr 2009</div>
-                    </div>
-                    <div class="exp-company-row">
-                        <div class="exp-company"><i class="fas fa-building" style="margin-right:6px;opacity:0.7"></i>Oak Systems</div>
-                        <div class="exp-location"><i class="fas fa-map-marker-alt"></i> Pune, India</div>
-                    </div>
-                    <div class="exp-clients"><strong>Client:</strong> Symantec Corporation</div>
-                </div>
-                <div class="exp-card-body">
-                    <ul class="exp-bullets">
-                        <li>
-                            <div class="bullet-dot"></div>
-                            <div>Executed functional, integration, and API test automation for Symantec enterprise applications including Salesforce and ERP systems; managed end-to-end defect tracking lifecycle to ensure stability during critical release windows.</div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
         </div>
-    </section>
 
-    <!-- ── TECHNICAL SKILLS ──────────────────────────────────────────── -->
-    <section class="section" id="skills">
-        <div class="section-header">
-            <div class="section-icon"><i class="fas fa-tools"></i></div>
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="section-line"></div>
+        <!-- MPHASIS USA -->
+        <div class="exp-card">
+            <div class="exp-head">
+                <div class="exp-top">
+                    <div class="exp-role">Delivery Module Lead / Senior Test Lead</div>
+                    <div class="exp-dates">Apr 2013 – Aug 2022</div>
+                </div>
+                <div class="exp-co-row">
+                    <div class="exp-co"><i class="fas fa-building" style="margin-right:6px;opacity:.7"></i>Mphasis Corporation</div>
+                    <div class="exp-loc"><i class="fas fa-map-marker-alt"></i>San Francisco, CA, USA</div>
+                </div>
+                <div class="exp-clients"><strong>Clients:</strong> First Republic Bank &nbsp;·&nbsp; Advisor Group &nbsp;·&nbsp; AIG VALIC &nbsp;·&nbsp; General Motors / GM OnStar</div>
+            </div>
+            <div class="exp-body">
+                <ul class="bullet-list">
+                    <li><div class="bdot"></div><div><span class="blabel">Banking Program Delivery: </span>Led Core Banking QA modernization for First Republic Bank managing teams of 5–20 engineers across 12+ mission-critical systems (FIS IBS); achieved <span class="mpill">#1 Defect Management</span> ranking with <span class="mpill">40% ↓ Production Defects</span> — awarded by First Republic Bank (2022).</div></li>
+                    <li><div class="bdot"></div><div><span class="blabel">TCOE &amp; Governance: </span>Established Testing Center of Excellence for <span class="mpill">$2B+ Platforms</span>; defined enterprise testing standards, quality gates, and SOX/PCI-DSS compliance frameworks. Managed SDLC/STLC end-to-end including test planning, environment provisioning, defect triage, and release sign-off; reduced release cycles by <span class="mpill">50%</span>.</div></li>
+                    <li><div class="bdot"></div><div><span class="blabel">Automation Engineering: </span>Architected and built Java/Selenium automation ecosystem from ground up (TestNG, Cucumber, Rest-Assured, Appium, Maven, Page Object Model); scaled coverage from <span class="mpill">45% → 85%</span>; developed <span class="mpill">300+ API Test Scripts</span> covering REST/SOAP service validations, contract testing, and schema validation.</div></li>
+                    <li><div class="bdot"></div><div><span class="blabel">Payment &amp; Cloud Testing: </span>Led testing for payment platforms (ACH/Wire, IBM FTM, Zelle); executed comprehensive testing (functional, regression, API, database, performance, security); orchestrated cloud migration testing for wealth management platforms; validated financial data integrity across migrations and post-merger consolidations.</div></li>
+                    <li><div class="bdot"></div><div><span class="blabel">DevOps Adoption: </span>Integrated automated regression suites into Jenkins CI/CD pipelines with quality gates and execution scripts; implemented JMeter performance testing to identify bottlenecks during infrastructure transitions; drove client Waterfall-to-Agile/DevOps transformation.</div></li>
+                    <li><div class="bdot"></div><div><span class="blabel">AIG VALIC / Insurance: </span>Led QA delivery for AIG VALIC insurance operations and account management platforms; managed Advisor Group wealth management platform testing; received 2016 Consumer IT Star &amp; Galaxy Award for outstanding QA contribution.</div></li>
+                </ul>
+            </div>
         </div>
-        <div class="skills-grid">
-            <div class="skill-card">
-                <div class="skill-icon teal"><i class="fas fa-vial"></i></div>
+
+        <!-- MPHASIS PUNE -->
+        <div class="exp-card">
+            <div class="exp-head">
+                <div class="exp-top">
+                    <div class="exp-role">Test Execution Lead / Senior Test Engineer</div>
+                    <div class="exp-dates">Apr 2009 – Apr 2013</div>
+                </div>
+                <div class="exp-co-row">
+                    <div class="exp-co"><i class="fas fa-building" style="margin-right:6px;opacity:.7"></i>Mphasis Limited</div>
+                    <div class="exp-loc"><i class="fas fa-map-marker-alt"></i>Pune, India</div>
+                </div>
+                <div class="exp-clients"><strong>Clients:</strong> HP &nbsp;·&nbsp; Symantec Corporation</div>
+            </div>
+            <div class="exp-body">
+                <ul class="bullet-list">
+                    <li><div class="bdot"></div><div><span class="blabel">Automation &amp; Strategy: </span>Developed test automation strategies for enterprise-scale business applications; executed <span class="mpill">200+ Test Scenarios</span> for functional, integration, and API testing; established client regression testing suite foundation.</div></li>
+                    <li><div class="bdot"></div><div><span class="blabel">Defect Management: </span>Collaborated with development teams on requirements analysis and migration testing; tracked defects in HP ALM; achieved <span class="mpill">95% Defect Resolution Rate</span> across ERP and Salesforce applications. Received multiple Symantec Client Recognition Awards (2010–2012).</div></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- OAK SYSTEMS -->
+        <div class="exp-card">
+            <div class="exp-head">
+                <div class="exp-top">
+                    <div class="exp-role">Senior Software Test Engineer</div>
+                    <div class="exp-dates">Mar 2008 – Apr 2009</div>
+                </div>
+                <div class="exp-co-row">
+                    <div class="exp-co"><i class="fas fa-building" style="margin-right:6px;opacity:.7"></i>Oak Systems</div>
+                    <div class="exp-loc"><i class="fas fa-map-marker-alt"></i>Pune, India</div>
+                </div>
+                <div class="exp-clients"><strong>Client:</strong> Symantec Corporation</div>
+            </div>
+            <div class="exp-body">
+                <ul class="bullet-list">
+                    <li><div class="bdot"></div><div>Developed and executed functional, integration, and API test automation for Symantec enterprise applications including Salesforce &amp; ERP; managed complete defect tracking lifecycle to ensure stability during critical release windows.</div></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ── TECHNICAL SKILLS ─────────────────────────────────────────────── -->
+<section class="sec" id="skills">
+    <div class="sec-hdr">
+        <div class="sec-ico"><i class="fas fa-tools"></i></div>
+        <h2 class="sec-title">Technical Skills</h2>
+        <div class="sec-line"></div>
+    </div>
+    <div class="skills-grid">
+        <div class="sk-card">
+            <div class="sk-ico ic-teal"><i class="fas fa-vial"></i></div>
+            <div>
+                <div class="sk-label">Test Automation</div>
+                <div class="sk-items">
+                    <span class="tag">Playwright</span><span class="tag">Selenium</span><span class="tag">Cypress</span><span class="tag">Appium</span><span class="tag">AccelQ</span><span class="tag">PyTest</span><span class="tag">Jest</span><span class="tag">TestNG</span><span class="tag">Cucumber</span><span class="tag">Robot Framework</span><span class="tag">JMeter</span><span class="tag">Rest-Assured</span><span class="tag">Postman</span><span class="tag">Newman</span><span class="tag">ATM Testing</span>
+                </div>
+            </div>
+        </div>
+        <div class="sk-card">
+            <div class="sk-ico ic-pink"><i class="fas fa-plug"></i></div>
+            <div>
+                <div class="sk-label">API &amp; Integration Testing</div>
+                <div class="sk-items">
+                    <span class="tag">REST</span><span class="tag">SOAP</span><span class="tag">GraphQL</span><span class="tag">Contract Testing</span><span class="tag">Schema Validation</span><span class="tag">Postman</span><span class="tag">Newman</span><span class="tag">Rest-Assured</span><span class="tag">SQL Validation</span><span class="tag">ETL Testing</span>
+                </div>
+            </div>
+        </div>
+        <div class="sk-card">
+            <div class="sk-ico ic-navy"><i class="fas fa-infinity"></i></div>
+            <div>
+                <div class="sk-label">CI/CD &amp; DevOps</div>
+                <div class="sk-items">
+                    <span class="tag">GitLab CI/CD</span><span class="tag">GitHub Actions</span><span class="tag">Jenkins</span><span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">OpenShift</span><span class="tag">HashiCorp Vault</span><span class="tag">JFrog Artifactory</span><span class="tag">Nexus</span><span class="tag">Terraform</span><span class="tag">Ansible</span><span class="tag">Maven</span><span class="tag">Gradle</span><span class="tag">npm</span>
+                </div>
+            </div>
+        </div>
+        <div class="sk-card">
+            <div class="sk-ico ic-purple"><i class="fas fa-cloud"></i></div>
+            <div>
+                <div class="sk-label">Cloud &amp; Containers</div>
+                <div class="sk-items">
+                    <span class="tag">AWS EKS</span><span class="tag">AWS ECR</span><span class="tag">AWS Lambda</span><span class="tag">AWS S3</span><span class="tag">CloudWatch</span><span class="tag">Azure DevOps</span><span class="tag">Kubernetes</span><span class="tag">OpenShift</span><span class="tag">Docker</span>
+                </div>
+            </div>
+        </div>
+        <div class="sk-card">
+            <div class="sk-ico ic-red"><i class="fas fa-shield-alt"></i></div>
+            <div>
+                <div class="sk-label">Quality &amp; Security</div>
+                <div class="sk-items">
+                    <span class="tag">SonarQube</span><span class="tag">Veracode</span><span class="tag">SAST</span><span class="tag">SCA</span><span class="tag">GitHub Advanced Security</span><span class="tag">OWASP</span><span class="tag">Code Reviews</span><span class="tag">BrowserStack</span><span class="tag">Sauce Labs</span>
+                </div>
+            </div>
+        </div>
+        <div class="sk-card">
+            <div class="sk-ico ic-gold"><i class="fas fa-robot"></i></div>
+            <div>
+                <div class="sk-label">AI / GenAI</div>
+                <div class="sk-items">
+                    <span class="tag">GitHub Copilot</span><span class="tag">Claude Code</span><span class="tag">Claude API</span><span class="tag">OpenAI API</span><span class="tag">LangChain</span><span class="tag">RAG Pipelines</span><span class="tag">Prompt Engineering</span><span class="tag">Agentic AI</span><span class="tag">AI-Assisted Test Generation</span><span class="tag">Internal LLMs</span>
+                </div>
+            </div>
+        </div>
+        <div class="sk-card">
+            <div class="sk-ico ic-green"><i class="fas fa-code"></i></div>
+            <div>
+                <div class="sk-label">Languages &amp; Databases</div>
+                <div class="sk-items">
+                    <span class="tag">Java</span><span class="tag">Python</span><span class="tag">JavaScript</span><span class="tag">TypeScript</span><span class="tag">SQL</span><span class="tag">Bash</span><span class="tag">PostgreSQL</span><span class="tag">MySQL</span><span class="tag">Oracle</span><span class="tag">SQL Server</span><span class="tag">MongoDB</span><span class="tag">Redis</span><span class="tag">Snowflake</span>
+                </div>
+            </div>
+        </div>
+        <div class="sk-card">
+            <div class="sk-ico ic-teal"><i class="fas fa-project-diagram"></i></div>
+            <div>
+                <div class="sk-label">PM, Monitoring &amp; Observability</div>
+                <div class="sk-items">
+                    <span class="tag">Jira</span><span class="tag">Confluence</span><span class="tag">Xray</span><span class="tag">TestRail</span><span class="tag">Rally</span><span class="tag">ServiceNow</span><span class="tag">MS Project</span><span class="tag">Asana</span><span class="tag">Lucidchart</span><span class="tag">Miro</span><span class="tag">Datadog</span><span class="tag">Splunk</span>
+                </div>
+            </div>
+        </div>
+        <div class="sk-card">
+            <div class="sk-ico ic-slate"><i class="fas fa-sync-alt"></i></div>
+            <div>
+                <div class="sk-label">Frameworks &amp; Methodologies</div>
+                <div class="sk-items">
+                    <span class="tag">Agile</span><span class="tag">Scrum</span><span class="tag">SAFe</span><span class="tag">Kanban</span><span class="tag">TDD</span><span class="tag">BDD</span><span class="tag">DevOps</span><span class="tag">Shift-Left</span><span class="tag">Waterfall-to-Agile</span><span class="tag">Page Object Model</span><span class="tag">Hybrid Framework</span><span class="tag">Data-Driven Testing</span><span class="tag">Keyword-Driven Testing</span>
+                </div>
+            </div>
+        </div>
+        <div class="sk-card">
+            <div class="sk-ico ic-red"><i class="fas fa-university"></i></div>
+            <div>
+                <div class="sk-label">BFSI Domain</div>
+                <div class="sk-items">
+                    <span class="tag">FIS IBS Core Banking</span><span class="tag">IBM FTM</span><span class="tag">ACH/Wire Transfers</span><span class="tag">Zelle</span><span class="tag">Deposits</span><span class="tag">Loans</span><span class="tag">Commercial Banking</span><span class="tag">Retail Banking</span><span class="tag">SOX Compliance</span><span class="tag">PCI-DSS</span><span class="tag">ETL Validation</span><span class="tag">Post-Merger Integration</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── EDUCATION & CERTIFICATIONS ───────────────────────────────────── -->
+<section class="sec" id="education">
+    <div class="sec-hdr">
+        <div class="sec-ico"><i class="fas fa-graduation-cap"></i></div>
+        <h2 class="sec-title">Education &amp; Certifications</h2>
+        <div class="sec-line"></div>
+    </div>
+    <div class="edu-layout">
+        <div class="edu-card">
+            <div class="edu-big-ico"><i class="fas fa-graduation-cap"></i></div>
+            <div class="edu-deg">Bachelor of Engineering</div>
+            <div class="edu-inst">Gulbarga University<br>Karnataka, India</div>
+        </div>
+        <div class="cert-col">
+            <div class="cert">
+                <div class="cert-ico" style="background:#e0f2fe"><i class="fas fa-certificate" style="color:var(--teal)"></i></div>
                 <div>
-                    <div class="skill-label">Test Automation</div>
-                    <div class="skill-list">Playwright, Selenium, Cypress, Appium, AccelQ, PyTest, Jest, TestNG, Cucumber, Robot Framework, JMeter, Rest-Assured, Postman</div>
+                    <div class="cert-name">Certified Scrum Master (CSM)</div>
+                    <div class="cert-by">Scrum Alliance &nbsp;·&nbsp; ID: 001547545</div>
                 </div>
             </div>
-            <div class="skill-card">
-                <div class="skill-icon navy"><i class="fas fa-infinity"></i></div>
+            <div class="cert">
+                <div class="cert-ico" style="background:#fef9c3"><i class="fab fa-github" style="color:#1a1a1a"></i></div>
                 <div>
-                    <div class="skill-label">CI/CD &amp; DevOps</div>
-                    <div class="skill-list">GitLab CI/CD, GitHub Actions, Jenkins, Docker, Kubernetes, OpenShift, HashiCorp Vault, JFrog Artifactory, Terraform, Ansible, Maven, Gradle</div>
+                    <div class="cert-name">Career Essentials in GitHub Copilot — Professional Certificate</div>
+                    <div class="cert-by">GitHub &nbsp;·&nbsp; December 2025</div>
                 </div>
             </div>
-            <div class="skill-card">
-                <div class="skill-icon purple"><i class="fas fa-cloud"></i></div>
+            <div class="cert">
+                <div class="cert-ico" style="background:#ede9fe"><i class="fas fa-brain" style="color:#7C3AED"></i></div>
                 <div>
-                    <div class="skill-label">Cloud &amp; Security</div>
-                    <div class="skill-list">AWS (EKS, ECR, Lambda, S3, CloudWatch), Azure DevOps, SonarQube, Veracode, SAST, SCA, OWASP, GitHub Advanced Security</div>
+                    <div class="cert-name">GenAI Foundation, AI Agents, Agentic AI &amp; Prompt Engineering</div>
+                    <div class="cert-by">Persistent Systems (2025) — GenAI Overview, ASVA, AI Agents, Agentic AI, iAura, GenAI Hub</div>
                 </div>
             </div>
-            <div class="skill-card">
-                <div class="skill-icon gold"><i class="fas fa-robot"></i></div>
+            <div class="cert">
+                <div class="cert-ico" style="background:#dcfce7"><i class="fab fa-google" style="color:#059669"></i></div>
                 <div>
-                    <div class="skill-label">AI / GenAI</div>
-                    <div class="skill-list">GitHub Copilot, Claude Code, Claude API, OpenAI API, LangChain, RAG Pipelines, Prompt Engineering, Agentic AI, AI-Assisted Test Generation</div>
-                </div>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon green"><i class="fas fa-code"></i></div>
-                <div>
-                    <div class="skill-label">Languages &amp; Databases</div>
-                    <div class="skill-list">Java, Python, JavaScript, TypeScript, SQL, Bash &nbsp;|&nbsp; PostgreSQL, MySQL, Oracle, MongoDB, Snowflake</div>
-                </div>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon teal"><i class="fas fa-project-diagram"></i></div>
-                <div>
-                    <div class="skill-label">PM &amp; Monitoring</div>
-                    <div class="skill-list">Jira, Confluence, Xray, TestRail, Rally, ServiceNow, MS Project, Miro, Datadog, Splunk, BrowserStack, Sauce Labs</div>
-                </div>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon slate"><i class="fas fa-sync-alt"></i></div>
-                <div>
-                    <div class="skill-label">Methodologies</div>
-                    <div class="skill-list">Agile, Scrum, SAFe, Kanban, TDD, BDD, DevOps, Shift-Left, Waterfall-to-Agile, Page Object Model, Data-Driven &amp; Keyword-Driven Testing</div>
-                </div>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon red"><i class="fas fa-university"></i></div>
-                <div>
-                    <div class="skill-label">BFSI Domain</div>
-                    <div class="skill-list">FIS IBS, IBM FTM, ACH/Wire Transfers, Zelle, Payment Processing, Deposits, Loans, Commercial &amp; Retail Banking, SOX/PCI-DSS, SDLC/STLC</div>
+                    <div class="cert-name">Introduction to Generative AI &nbsp;·&nbsp; GenAI Assisted Coding</div>
+                    <div class="cert-by">Google &nbsp;·&nbsp; Persistent Systems (2025)</div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- ── EDUCATION & CERTIFICATIONS ───────────────────────────────── -->
-    <section class="section" id="education">
-        <div class="section-header">
-            <div class="section-icon"><i class="fas fa-graduation-cap"></i></div>
-            <h2 class="section-title">Education &amp; Certifications</h2>
-            <div class="section-line"></div>
+<!-- ── AWARDS ───────────────────────────────────────────────────────── -->
+<section class="sec" id="awards">
+    <div class="sec-hdr">
+        <div class="sec-ico"><i class="fas fa-trophy"></i></div>
+        <h2 class="sec-title">Awards &amp; Recognition</h2>
+        <div class="sec-line"></div>
+    </div>
+    <div class="awards-grid">
+        <div class="aw-card">
+            <div class="aw-yr">2025</div>
+            <div class="aw-title">High Five Award — Program Management Excellence</div>
+            <div class="aw-org">Persistent Systems — Recognized for outstanding program delivery</div>
         </div>
-        <div class="edu-grid">
-            <div class="edu-card">
-                <div class="edu-icon-big"><i class="fas fa-graduation-cap"></i></div>
-                <div class="edu-degree">Bachelor of Engineering</div>
-                <div class="edu-institution">Gulbarga University<br>Karnataka, India</div>
-            </div>
-            <div class="cert-grid">
-                <div class="cert-card">
-                    <div class="cert-icon" style="background:#e0f2fe;"><i class="fas fa-certificate" style="color:var(--teal)"></i></div>
-                    <div>
-                        <div class="cert-name">Certified Scrum Master (CSM)</div>
-                        <div class="cert-issuer">Scrum Alliance &nbsp;·&nbsp; ID: 001547545</div>
-                    </div>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon" style="background:#fef9c3;"><i class="fab fa-github" style="color:#1a1a1a"></i></div>
-                    <div>
-                        <div class="cert-name">Career Essentials in GitHub Copilot — Professional Certificate</div>
-                        <div class="cert-issuer">GitHub &nbsp;·&nbsp; Dec 2025</div>
-                    </div>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon" style="background:#ede9fe;"><i class="fas fa-brain" style="color:#7C3AED"></i></div>
-                    <div>
-                        <div class="cert-name">AI &amp; GenAI Training Portfolio</div>
-                        <div class="cert-issuer">Persistent Systems (2025) — GenAI Foundation, AI Agents, Agentic AI, ASVA Overview, iAura GenAI Hub</div>
-                    </div>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon" style="background:#dcfce7;"><i class="fab fa-google" style="color:#059669"></i></div>
-                    <div>
-                        <div class="cert-name">Introduction to Generative AI &nbsp;·&nbsp; GenAI Assisted Coding</div>
-                        <div class="cert-issuer">Google &nbsp;·&nbsp; Persistent Systems (2025)</div>
-                    </div>
-                </div>
-            </div>
+        <div class="aw-card">
+            <div class="aw-yr">2022</div>
+            <div class="aw-title">#1 Defect Management Ranking</div>
+            <div class="aw-org">First Republic Bank — Top-ranked QA delivery across all vendor teams for FIS IBS system</div>
         </div>
-    </section>
-
-    <!-- ── AWARDS & RECOGNITION ──────────────────────────────────────── -->
-    <section class="section" id="awards">
-        <div class="section-header">
-            <div class="section-icon"><i class="fas fa-trophy"></i></div>
-            <h2 class="section-title">Awards &amp; Recognition</h2>
-            <div class="section-line"></div>
+        <div class="aw-card">
+            <div class="aw-yr">2016</div>
+            <div class="aw-title">Consumer IT Star &amp; Galaxy Award</div>
+            <div class="aw-org">AIG VALIC — Outstanding QA contribution and delivery excellence</div>
         </div>
-        <div class="awards-grid">
-            <div class="award-card">
-                <div class="award-year">2025</div>
-                <div class="award-title">High Five Award — Program Management Excellence</div>
-                <div class="award-org">Persistent Systems</div>
-            </div>
-            <div class="award-card">
-                <div class="award-year">2022</div>
-                <div class="award-title">#1 Defect Management Ranking</div>
-                <div class="award-org">First Republic Bank — Top-ranked QA program across all vendor teams</div>
-            </div>
-            <div class="award-card">
-                <div class="award-year">2016</div>
-                <div class="award-title">Consumer IT Star &amp; Galaxy Award</div>
-                <div class="award-org">AIG VALIC — Outstanding QA contribution &amp; delivery excellence</div>
-            </div>
-            <div class="award-card">
-                <div class="award-year">2015</div>
-                <div class="award-title">Triumph Award — Test Automation Excellence</div>
-                <div class="award-org">HP — Recognized for automation framework innovation</div>
-            </div>
-            <div class="award-card">
-                <div class="award-year">2014</div>
-                <div class="award-title">Test Strategy Excellence Award</div>
-                <div class="award-org">GM OnStar — Innovative test strategy and quality leadership</div>
-            </div>
-            <div class="award-card">
-                <div class="award-year">2010–12</div>
-                <div class="award-title">Client Recognition — Multiple Awards</div>
-                <div class="award-org">Symantec Corporation — Sustained quality and delivery recognition</div>
-            </div>
+        <div class="aw-card">
+            <div class="aw-yr">2015</div>
+            <div class="aw-title">Triumph Award — Test Automation Excellence</div>
+            <div class="aw-org">HP — Recognized for test automation framework innovation</div>
         </div>
-    </section>
+        <div class="aw-card">
+            <div class="aw-yr">2014</div>
+            <div class="aw-title">Test Strategy Excellence Award</div>
+            <div class="aw-org">GM OnStar — Innovative test strategy and quality engineering leadership</div>
+        </div>
+        <div class="aw-card">
+            <div class="aw-yr">2010–12</div>
+            <div class="aw-title">Multiple Client Recognition Awards</div>
+            <div class="aw-org">Symantec Corporation — Sustained quality, defect resolution, and delivery recognition</div>
+        </div>
+    </div>
+</section>
 
 </main>
 
-<!-- ═══════════════════════════════════════════════════════════════════════
-     FOOTER
-═══════════════════════════════════════════════════════════════════════ -->
+<!-- ═══ FOOTER ═══════════════════════════════════════════════════════ -->
 <footer>
     <p>&copy; 2026 <strong>Shivkumar Patil</strong>. All rights reserved. &nbsp;·&nbsp; Pune, India (Relocating April 2026)</p>
-    <div class="footer-links">
-        <a href="mailto:smpshiva@gmail.com"><i class="fas fa-envelope"></i> Email</a>
-        <a href="https://www.linkedin.com/in/shivkumarpatil/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-        <a href="https://qualion.ai" target="_blank"><i class="fas fa-globe"></i> Qualion AI</a>
-        <a href="https://github.com/smpshiva" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    <div class="ft-links">
+        <a href="mailto:smpshiva@gmail.com"><i class="fas fa-envelope"></i>Email</a>
+        <a href="https://www.linkedin.com/in/shivkumarpatil/" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
+        <a href="https://qualion.ai" target="_blank"><i class="fas fa-globe"></i>Qualion AI</a>
+        <a href="https://github.com/smpshiva" target="_blank"><i class="fab fa-github"></i>GitHub</a>
     </div>
 </footer>
 
 <script>
-    // ── Scroll progress bar
+    // progress bar
     window.addEventListener('scroll', () => {
         const h = document.documentElement.scrollHeight - window.innerHeight;
         document.getElementById('progressBar').style.width = (window.scrollY / h * 100) + '%';
     });
 
-    // ── Intersection Observer for fade-in
+    // fade-in on scroll
     const io = new IntersectionObserver((entries) => {
-        entries.forEach(e => {
-            if (e.isIntersecting) {
-                e.target.classList.add('visible');
-                io.unobserve(e.target);
-            }
-        });
-    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('vis'); io.unobserve(e.target); } });
+    }, { threshold: 0.06, rootMargin: '0px 0px -36px 0px' });
 
-    document.querySelectorAll('.section, .exp-card').forEach((el, i) => {
-        el.style.transitionDelay = (i * 0.04) + 's';
+    document.querySelectorAll('.sec, .exp-card').forEach((el, i) => {
+        el.style.transitionDelay = (i * 0.035) + 's';
         io.observe(el);
     });
 
-    // ── Active nav tab on scroll
-    const navLinks = document.querySelectorAll('.nav-tab');
+    // active nav on scroll
+    const navLinks = document.querySelectorAll('.ntab');
     const sections = document.querySelectorAll('section[id]');
-
-    const navObserver = new IntersectionObserver((entries) => {
+    const navObs = new IntersectionObserver((entries) => {
         entries.forEach(e => {
             if (e.isIntersecting) {
                 navLinks.forEach(l => l.classList.remove('active'));
-                const link = document.querySelector(`.nav-tab[href="#${e.target.id}"]`);
-                if (link) link.classList.add('active');
+                const lk = document.querySelector(`.ntab[href="#${e.target.id}"]`);
+                if (lk) lk.classList.add('active');
             }
         });
-    }, { rootMargin: '-30% 0px -60% 0px' });
-
-    sections.forEach(s => navObserver.observe(s));
+    }, { rootMargin: '-25% 0px -65% 0px' });
+    sections.forEach(s => navObs.observe(s));
 </script>
 
 </body>
